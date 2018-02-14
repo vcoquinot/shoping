@@ -16,8 +16,6 @@ public class Accueil extends AppCompatActivity {
         setContentView(R.layout.activity_00accueil);
 
 
-//        final Button mescoursesButton= (Button)findViewById(R.id.Mes_courses);
-//        mescoursesButton.setOnClickListener(new View.OnClickListener(){
     }
 
     public void ClickCourse(View courseButton) {

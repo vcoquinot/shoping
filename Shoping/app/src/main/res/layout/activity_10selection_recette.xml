@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+
     android:background="@drawable/gradient3"
     tools:context="com.example.morga.shoping.selection_recette">
 
     <include
         layout="@layout/content_selection_recette"
-        android:layout_height="620dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
