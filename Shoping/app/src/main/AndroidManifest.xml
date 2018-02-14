@@ -8,17 +8,46 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Accueil">
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Accueil"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".selection_recette"
+            android:label="@string/title_activity_selection_recette"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <activity android:name=".categorie_recette"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Liste_recettes"
+            android:label="@string/title_activity_liste_recettes"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".Ma_recette"
+            android:label="@string/title_activity_ma_recette"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <!--<activity android:name=".Accueil"-->
+            <!--android:theme="@style/AppTheme.NoActionBar"/>-->
+        <activity android:name=".categorie_ingredient" />
+        <activity android:name=".mes_courses" />
+        <activity
+            android:name=".liste_ingredients"
+            android:label="@string/title_activity_liste_ingredients"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>

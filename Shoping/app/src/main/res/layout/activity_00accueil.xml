@@ -4,72 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_accueil"
     android:minHeight="82dp"
+    android:theme="@style/AppTheme.NoActionBar"
     tools:context="com.example.morga.shoping.Accueil">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Mes_recettes"
         android:layout_width="220dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bt_40"
         android:fontFamily="@font/ubuntu_medium"
+        android:onClick="ClickRecette"
         android:text="Mes recettes"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ma_selection" />
+
+    <Button
+        android:id="@+id/Ma_selection"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/bt_40"
+        android:fontFamily="@font/ubuntu_medium"
+        android:onClick="ClickSelection"
+        android:text="Ma Sélection"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="70dp"
-        android:background="@drawable/bt_40"
-        android:fontFamily="@font/ubuntu_medium"
-        android:letterSpacing="2000"
-        android:text="Mes courses"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:background="@drawable/bt_40"
-        android:fontFamily="@font/ubuntu_medium"
-        android:text="Ma Sélection"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="321dp"
-        android:layout_height="319dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="396dp"
+        android:layout_height="218dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logoshop_ing_provisoire" />
+        app:srcCompat="@drawable/logo_shoping_blanc" />
+
+    <Button
+        android:id="@+id/Mes_courses"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bt_40"
+        android:fontFamily="@font/ubuntu_medium"
+        android:onClick="ClickCourse"
+        android:text="Mes courses"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mes_recettes" />
 
 
 </android.support.constraint.ConstraintLayout>
