@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient4"
+    android:background="@drawable/gradient_ma_selection"
     tools:context="com.example.morga.shoping.categorie_ingredient">
 
 </android.support.constraint.ConstraintLayout>

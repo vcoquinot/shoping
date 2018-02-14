@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient5"
+    android:background="@drawable/gradient_courses"
     tools:context="com.example.morga.shoping.mes_courses">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_courses"
         android:layout_width="395dp"
         android:layout_height="209dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="260dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

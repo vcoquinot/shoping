@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/gradient1"
+    android:background="@drawable/gradient_courses"
     tools:context="com.example.morga.shoping.categorie_recette">
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
