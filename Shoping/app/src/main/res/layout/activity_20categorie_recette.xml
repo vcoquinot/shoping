@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_recette"
     android:minHeight="82dp"
-    tools:context="com.example.morga.shoping.Categorie_recette">
+    tools:context="com.example.morga.shoping.categorie_recette">
 
     <ImageView
         android:id="@+id/imageRecettes"

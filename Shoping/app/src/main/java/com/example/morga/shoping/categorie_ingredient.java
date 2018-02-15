@@ -3,7 +3,7 @@ package com.example.morga.shoping;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Categorie_ingredient extends AppCompatActivity {
+public class categorie_ingredient extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

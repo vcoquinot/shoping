@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.view.Window;
 
-public class Categorie_recette extends AppCompatActivity {
+public class categorie_recette extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,22 +24,22 @@ public class Categorie_recette extends AppCompatActivity {
     }
 
     public void ClickEntree(View EntreeButton) {
-        Intent intent = new Intent(Categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
     }
 
     public void ClickPlat(View PlatButton) {
-        Intent intent = new Intent(Categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
     }
 
     public void ClickDessert(View DessertButton) {
-        Intent intent = new Intent(Categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
     }
 
     public void ClickAutre(View AutreButton) {
-        Intent intent = new Intent(Categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
     }
 }
