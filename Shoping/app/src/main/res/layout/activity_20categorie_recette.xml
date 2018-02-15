@@ -15,14 +15,15 @@
         android:layout_marginEnd="5dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/TitreRecettes"
         app:layout_constraintHorizontal_bias="0.821"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/top_recettes" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/TitreRecettes"
         android:layout_width="100dp"
         android:layout_height="34dp"
         android:layout_marginBottom="8dp"

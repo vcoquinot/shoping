@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.view.Window;
 
 public class categorie_recette extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_20categorie_recette);
     }
     @Override
@@ -21,7 +23,7 @@ public class categorie_recette extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    /*public void ClickEntree(View EntreeButton) {
+    public void ClickEntree(View EntreeButton) {
         Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
     }
@@ -39,5 +41,5 @@ public class categorie_recette extends AppCompatActivity {
     public void ClickAutre(View AutreButton) {
         Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
         startActivity(intent);
-    }*/
+    }
 }
