@@ -85,10 +85,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Concentrez-vous sur vos recettes, Shop’ing s’occupe du reste. \n\nEnregistrez vos recettes préférées et en un clic enregistrez aussi tous les ingrédients nécessaires. Votre liste de courses est prête ! "
+        android:text="Concentrez-vous sur vos recettes,\n Shop’ing s’occupe du reste. \n\nEnregistrez vos petits plats préférés et faites vos courses sans jamais rien oublier !
+ "
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"
-        android:textSize="13sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
