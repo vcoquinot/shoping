@@ -15,7 +15,7 @@
         android:layout_height="51dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bt_40"
         android:fontFamily="@font/ubuntu_medium"
         android:onClick="ClickSelection"
@@ -66,7 +66,6 @@
         android:id="@+id/Mes_courses"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/bt_40"
         android:fontFamily="@font/ubuntu_medium"
@@ -74,7 +73,6 @@
         android:text="Mes courses"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Mes_recettes" />
@@ -82,14 +80,15 @@
     <TextView
         android:id="@+id/Text_Intro"
         android:layout_width="294dp"
-        android:layout_height="99dp"
+        android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
         android:text="Concentrez-vous sur vos recettes, Shop’ing s’occupe du reste. \n\nEnregistrez vos recettes préférées et en un clic enregistrez aussi tous les ingrédients nécessaires. Votre liste de courses est prête ! "
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
@@ -100,13 +99,12 @@
         android:layout_height="112dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Text_Intro"
-        app:srcCompat="@drawable/picto_accueil"
-        tools:alpha="0.4" />
+        app:srcCompat="@drawable/picto_accueil" />
 
 
 </android.support.constraint.ConstraintLayout>
