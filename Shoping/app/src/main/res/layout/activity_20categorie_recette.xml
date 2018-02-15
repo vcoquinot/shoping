@@ -4,12 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@drawable/gradient_courses"
+    android:background="@drawable/gradient_recette"
+    android:minHeight="82dp"
     tools:context="com.example.morga.shoping.categorie_recette">
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/imageRecettes"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_recettes" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="RECETTES"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRecettes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRecettes" />
+
+    <ImageButton
+        android:id="@+id/boutonEntree"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/bt_40"
+        android:onClick="ClickEntree"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRecettes"
+        app:srcCompat="@drawable/cat_entree" />
+
+    <ImageButton
+        android:id="@+id/boutonPlat"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bt_40"
+        android:onClick="ClickPlat"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boutonEntree"
+        app:srcCompat="@drawable/cat_plat" />
+
+    <ImageButton
+        android:id="@+id/boutonDessert"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bt_40"
+        android:onClick="ClickDessert"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boutonPlat"
+        app:srcCompat="@drawable/cat_dessert" />
+
+    <ImageButton
+        android:id="@+id/boutonAutre"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bt_40"
+        android:onClick="ClickAutre"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boutonDessert"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/cat_autre" />
+
+    <TextView
+        android:id="@+id/Entree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="ENTRÉE"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonEntree"
+        app:layout_constraintEnd_toEndOf="@+id/boutonEntree"
+        app:layout_constraintStart_toStartOf="@+id/boutonEntree"
+        app:layout_constraintTop_toTopOf="@+id/boutonEntree" />
+
+    <TextView
+        android:id="@+id/Plat"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="PLAT"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonPlat"
+        app:layout_constraintEnd_toEndOf="@+id/boutonPlat"
+        app:layout_constraintStart_toStartOf="@+id/boutonPlat"
+        app:layout_constraintTop_toTopOf="@+id/boutonPlat" />
+
+    <TextView
+        android:id="@+id/Dessert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="DESSERT"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonDessert"
+        app:layout_constraintEnd_toEndOf="@+id/boutonDessert"
+        app:layout_constraintStart_toStartOf="@+id/boutonDessert"
+        app:layout_constraintTop_toTopOf="@+id/boutonDessert" />
+
+    <TextView
+        android:id="@+id/Autre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="AUTRE"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonAutre"
+        app:layout_constraintEnd_toEndOf="@+id/boutonAutre"
+        app:layout_constraintStart_toStartOf="@+id/boutonAutre"
+        app:layout_constraintTop_toTopOf="@+id/boutonAutre" />
 
 </android.support.constraint.ConstraintLayout>

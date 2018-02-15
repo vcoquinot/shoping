@@ -1,9 +1,11 @@
 package com.example.morga.shoping;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 
 public class categorie_recette extends AppCompatActivity {
 
@@ -18,4 +20,24 @@ public class categorie_recette extends AppCompatActivity {
         inflater.inflate(R.menu.main_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    /*public void ClickEntree(View EntreeButton) {
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        startActivity(intent);
+    }
+
+    public void ClickPlat(View PlatButton) {
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        startActivity(intent);
+    }
+
+    public void ClickDessert(View DessertButton) {
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        startActivity(intent);
+    }
+
+    public void ClickAutre(View AutreButton) {
+        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        startActivity(intent);
+    }*/
 }

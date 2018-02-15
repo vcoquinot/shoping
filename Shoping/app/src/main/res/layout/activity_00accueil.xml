@@ -12,7 +12,7 @@
     <Button
         android:id="@+id/Ma_selection"
         android:layout_width="220dp"
-        android:layout_height="50dp"
+        android:layout_height="51dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
