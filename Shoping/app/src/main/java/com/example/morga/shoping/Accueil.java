@@ -1,7 +1,6 @@
 package com.example.morga.shoping;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +20,7 @@ public class Accueil extends AppCompatActivity {
     public void ClickCourse(View courseButton) {
         //Intent intent = new Intent(Accueil.this, mes_courses.class);
         //!!!!!!!!CHANGED DIRECTION TO CHECK ACTIVITY!!!!!!!!
-        Intent intent = new Intent(Accueil.this, categorie_ingredient.class);
+        Intent intent = new Intent(Accueil.this, Categorie_ingredient.class);
         startActivity(intent);
     }
 
@@ -30,7 +29,7 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, categorie_recette.class);
+        Intent intent = new Intent(Accueil.this, Categorie_recette.class);
         startActivity(intent);
     }
 }

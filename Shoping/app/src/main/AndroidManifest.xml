@@ -29,7 +29,7 @@
             android:label="@string/title_activity_selection_recette"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
-        <activity android:name=".categorie_recette"
+        <activity android:name=".Categorie_recette"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
@@ -42,10 +42,10 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <!--<activity android:name=".Accueil"-->
             <!--android:theme="@style/AppTheme.NoActionBar"/>-->
-        <activity android:name=".categorie_ingredient" />
+        <activity android:name=".Categorie_ingredient" />
         <activity android:name=".mes_courses" />
         <activity
-            android:name=".liste_ingredients"
+            android:name=".Liste_ingredients"
             android:label="@string/title_activity_liste_ingredients"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
