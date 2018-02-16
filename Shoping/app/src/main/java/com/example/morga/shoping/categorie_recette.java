@@ -24,22 +24,22 @@ public class categorie_recette extends AppCompatActivity {
     }
 
     public void clickEntree(View entreeImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
     public void clickPlat(View platImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
     public void clickDessert(View dessertImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
     public void clickAutre(View autreImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 }
