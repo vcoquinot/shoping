@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.morga.shoping.liste_ingredients"
-    tools:showIn="@layout/activity_31_liste_ingredients">
+    tools:context="com.example.morga.shoping.Liste_ingredients">
 
 </android.support.constraint.ConstraintLayout>
