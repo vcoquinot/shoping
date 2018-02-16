@@ -208,6 +208,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
         android:paddingBottom="4dp"
         android:text="LÉGUMES"
@@ -217,8 +218,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/légume"
         app:layout_constraintEnd_toEndOf="@+id/légume"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="@+id/légume" />
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/légume"
+        app:layout_constraintTop_toTopOf="@+id/légume"
+        app:layout_constraintVertical_bias="0.959" />
 
     <TextView
         android:id="@+id/textView4"
@@ -247,19 +250,21 @@
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
         android:paddingBottom="4dp"
-        android:text="POISSONNERIE"
+        android:text=" POISSONNERIE"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/epicerie"
         app:layout_constraintEnd_toEndOf="@+id/poissonnerie"
+        app:layout_constraintStart_toStartOf="@+id/poissonnerie"
         app:layout_constraintTop_toTopOf="@+id/poissonnerie"
-        app:layout_constraintVertical_bias="0.962" />
+        app:layout_constraintVertical_bias="0.851" />
 
     <TextView
         android:id="@+id/textView7"
