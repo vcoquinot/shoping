@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
@@ -30,10 +31,18 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, categorie_recette.class);
+        Intent intent = new Intent(Accueil.this, Aide.class);
         startActivity(intent);
     }
-    
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==R.id.aide_menu){
+            Intent aide=new Intent(this,Aide.class);
+            startActivity(aide);
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
 
 

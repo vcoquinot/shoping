@@ -34,11 +34,17 @@ public class selection_recette extends AppCompatActivity {
         inflater.inflate(R.menu.main_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
-    public boolean onOptionsItemsSelected(MenuItem item) {
-        if (item.getItemId() == R.id.aide_menu) {
-            Intent intent = new Intent(this, Aide.class);
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.aide_menu:
+                Intent aide= new Intent(this,Aide.class);
+                startActivity(aide);
+
         }
-        return onOptionsItemSelected(item);
+        return true;
     }
+
+
 
 }

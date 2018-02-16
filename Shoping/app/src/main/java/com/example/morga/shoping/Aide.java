@@ -1,11 +1,13 @@
 package com.example.morga.shoping;
 
-import android.os.Bundle;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.View;
+import android.view.Window;
 
-/**
- * Created by morga on 16/02/2018.
- */
 
 public class Aide extends AppCompatActivity {
 
