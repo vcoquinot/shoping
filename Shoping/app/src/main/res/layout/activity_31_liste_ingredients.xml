@@ -7,5 +7,142 @@
     android:background="@drawable/gradient_ingredients"
     tools:context="com.example.morga.shoping.liste_ingredients">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_ingredients" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="132dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        tools:text="INGRÉDIENTS" />
+
+
+    <ImageButton
+        android:id="@+id/fruits"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/légumes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/ing_fruits" />
+
+    <ImageButton
+        android:id="@+id/légumes"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:alpha="1"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/fruits"
+        app:layout_constraintEnd_toStartOf="@+id/boucherie"
+        app:layout_constraintStart_toEndOf="@+id/fruits"
+        app:layout_constraintTop_toTopOf="@+id/fruits"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ing_legumes" />
+
+    <ImageButton
+        android:id="@+id/boucherie"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/légumes"
+        app:layout_constraintEnd_toStartOf="@+id/poissonnerie"
+        app:layout_constraintTop_toTopOf="@+id/légumes"
+        app:srcCompat="@drawable/ing_boucherie" />
+
+    <ImageButton
+        android:id="@+id/boissons"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/epicerie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/epicerie"
+        app:srcCompat="@drawable/ing_boisson" />
+
+    <ImageButton
+        android:id="@+id/poissonnerie"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/boucherie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/boucherie"
+        app:srcCompat="@drawable/ing_poissonnerie" />
+
+    <ImageButton
+        android:id="@+id/epicerie"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/frais"
+        app:layout_constraintEnd_toStartOf="@+id/boissons"
+        app:layout_constraintTop_toTopOf="@+id/frais"
+        app:srcCompat="@drawable/ing_epicerie" />
+
+    <ImageButton
+        android:id="@+id/frais"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/epicerie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruits"
+        app:srcCompat="@drawable/ing_frais" />
+
 
 </android.support.constraint.ConstraintLayout>
