@@ -259,7 +259,7 @@
         app:layout_constraintBottom_toTopOf="@+id/epicerie"
         app:layout_constraintEnd_toEndOf="@+id/poissonnerie"
         app:layout_constraintTop_toTopOf="@+id/poissonnerie"
-        app:layout_constraintVertical_bias="0.851" />
+        app:layout_constraintVertical_bias="0.962" />
 
     <TextView
         android:id="@+id/textView7"
@@ -275,7 +275,7 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/frais"
         app:layout_constraintEnd_toEndOf="@+id/frais"
         app:layout_constraintHorizontal_bias="0.469"
@@ -310,7 +310,7 @@
         app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="@+id/epicerie"
         app:layout_constraintTop_toTopOf="@+id/epicerie"
-        app:layout_constraintVertical_bias="0.938" />
+        app:layout_constraintVertical_bias="0.979" />
 
     <TextView
         android:id="@+id/textView9"
