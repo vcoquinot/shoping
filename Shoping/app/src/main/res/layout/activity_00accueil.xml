@@ -85,7 +85,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="Concentrez-vous sur vos recettes,\n Shop’ing s’occupe du reste. \n\nEnregistrez vos petits plats préférés et faites vos courses sans jamais rien oublier !
+        android:text="Concentrez-vous sur vos recettes,\n Shop’ing s’occupe du reste. \n\nEnregistrez vos plats préférés\n et faites vos courses sans jamais ne rien oublier !
  "
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
