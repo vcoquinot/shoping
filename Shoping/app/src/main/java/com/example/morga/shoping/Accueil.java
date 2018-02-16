@@ -33,6 +33,7 @@ public class Accueil extends AppCompatActivity {
         Intent intent = new Intent(Accueil.this, categorie_recette.class);
         startActivity(intent);
     }
+    
 }
 
 

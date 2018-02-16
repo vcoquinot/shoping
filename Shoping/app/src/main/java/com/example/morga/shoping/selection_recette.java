@@ -1,5 +1,6 @@
 package com.example.morga.shoping;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -7,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class selection_recette extends AppCompatActivity {
@@ -31,6 +33,12 @@ public class selection_recette extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+    public boolean onOptionsItemsSelected(MenuItem item) {
+        if (item.getItemId() == R.id.aide_menu) {
+            Intent intent = new Intent(this, Aide.class);
+        }
+        return onOptionsItemSelected(item);
     }
 
 }

@@ -10,4 +10,4 @@
     tools:context="com.example.morga.shoping.selection_recette">
 
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
