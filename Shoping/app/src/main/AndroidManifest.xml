@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Shoping"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_shoping_blanc"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
@@ -28,7 +28,7 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".categorie_recette"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".Liste_recettes"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
@@ -37,17 +37,16 @@
             android:label="@string/title_activity_ma_recette"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
-        <activity android:name=".categorie_ingredient"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-        <activity android:name=".mes_courses"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name=".categorie_ingredient" />
+        <activity android:name=".mes_courses" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".liste_ingredients"
             android:label="@string/title_activity_liste_ingredients"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
-        <activity android:name=".Ingredients" />
+        <activity android:name=".Ingredients"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".Aide_mentions"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
 
         </activity>
     </application>
