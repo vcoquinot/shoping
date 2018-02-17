@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/gradient_recette"
-        tools:context="com.example.morga.shoping.Ma_recette">
+        tools:context="com.example.morga.shoping.Ma_recette_creation">
 
 
         <!--<EditText-->
@@ -164,5 +164,32 @@
             app:layout_constraintTop_toTopOf="@+id/cat_entree"
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/cat_autre" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="299dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bt_40"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu_medium"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:enabled="true"
+        android:minLines="6"
+        android:maxLines="6"
+        android:isScrollContainer="true"
+        android:focusable="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre_cat_recettes"
+        app:layout_constraintVertical_bias="0.319" />
+
+
 
 </android.support.constraint.ConstraintLayout>
