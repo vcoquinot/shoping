@@ -53,6 +53,10 @@ public class selection_recette extends AppCompatActivity {
             Intent aide=new Intent(this,Aide_mentions.class);
             startActivity(aide);
         }
+        else if (item.getItemId()==R.id.recettes_menu){
+            Intent recettes=new Intent(this,categorie_recette.class);
+            startActivity(recettes);
+        }
         return super.onOptionsItemSelected(item);
     }
 
