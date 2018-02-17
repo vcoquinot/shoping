@@ -8,27 +8,6 @@
     tools:context="com.example.morga.shoping.Ma_recette">
 
 
-    <!--<EditText-->
-        <!--android:id="@+id/titre_recette"-->
-        <!--pp:layout_constraintStart_toStartOf="parent"-->
-        <!--t_constraintTop_toBottomOf="@+id/cat_entree"-->
-        <!--android:layout_width="327dp"-->
-        <!--android:layout_height="46dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:background="@drawable/bt_40"-->
-        <!--android:ems="10"-->
-        <!--android:fontFamily="@font/ubuntu_medium"-->
-        <!--android:inputType="textPersonName"-->
-        <!--android:text="titre de ma recette dsjfu sdjug sdju sdfuyg sdfjy sdfy sdfyj sdyj"-->
-
-        <!--android:textAlignment="viewStart"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/cat_entree" />-->
-
-
     <EditText
         android:id="@+id/nb_convives"
         android:layout_width="26dp"
@@ -37,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:fontFamily="@font/ubuntu_medium"
         android:inputType="textPersonName|number"
@@ -49,7 +29,6 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="@+id/visuel_cat_recettes"
         app:layout_constraintTop_toTopOf="@+id/visuel_cat_recettes"
-        android:background="@android:color/transparent"
         app:layout_constraintVertical_bias="0.13" />
 
     <Button
@@ -163,4 +142,5 @@
         app:layout_constraintTop_toTopOf="@+id/cat_entree"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cat_autre" />
+
 </android.support.constraint.ConstraintLayout>

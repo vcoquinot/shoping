@@ -78,7 +78,7 @@
         app:srcCompat="@drawable/ing_legumes" />
 
     <ImageButton
-        android:id="@+id/boucherie"
+        android:id="@+id/cat_boucherie"
         android:layout_width="130dp"
         android:layout_height="90dp"
         android:layout_marginEnd="8dp"
@@ -92,7 +92,7 @@
         android:paddingRight="8dp"
         android:paddingStart="8dp"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/poissonnerie"
+        app:layout_constraintEnd_toStartOf="@+id/cat_poissonnerie"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fruit"
         app:srcCompat="@drawable/ing_boucherie" />
@@ -116,11 +116,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epicerie"
+        app:layout_constraintTop_toBottomOf="@+id/cat_epicerie"
         app:srcCompat="@drawable/ing_boisson" />
 
     <ImageButton
-        android:id="@+id/poissonnerie"
+        android:id="@+id/cat_poissonnerie"
         android:layout_width="130dp"
         android:layout_height="90dp"
         android:layout_marginEnd="28dp"
@@ -135,12 +135,12 @@
         android:paddingStart="8dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/boucherie"
+        app:layout_constraintStart_toEndOf="@+id/cat_boucherie"
         app:layout_constraintTop_toBottomOf="@+id/légume"
         app:srcCompat="@drawable/ing_poissonnerie" />
 
     <ImageButton
-        android:id="@+id/epicerie"
+        android:id="@+id/cat_epicerie"
         android:layout_width="130dp"
         android:layout_height="90dp"
         android:layout_marginEnd="28dp"
@@ -156,12 +156,12 @@
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/frais"
-        app:layout_constraintTop_toBottomOf="@+id/poissonnerie"
+        app:layout_constraintStart_toEndOf="@+id/cat_frais"
+        app:layout_constraintTop_toBottomOf="@+id/cat_poissonnerie"
         app:srcCompat="@drawable/ing_epicerie" />
 
     <ImageButton
-        android:id="@+id/frais"
+        android:id="@+id/cat_frais"
         android:layout_width="130dp"
         android:layout_height="90dp"
         android:layout_marginEnd="8dp"
@@ -175,9 +175,9 @@
         android:paddingRight="8dp"
         android:paddingStart="8dp"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/epicerie"
+        app:layout_constraintEnd_toStartOf="@+id/cat_epicerie"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/boucherie"
+        app:layout_constraintTop_toBottomOf="@+id/cat_boucherie"
         app:srcCompat="@drawable/ing_frais" />
 
     <TextView
@@ -194,7 +194,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/boucherie"
+        app:layout_constraintBottom_toTopOf="@+id/cat_boucherie"
         app:layout_constraintEnd_toEndOf="@+id/fruit"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="@+id/fruit"
@@ -238,11 +238,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/boucherie"
-        app:layout_constraintEnd_toEndOf="@+id/boucherie"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_boucherie"
+        app:layout_constraintEnd_toEndOf="@+id/cat_boucherie"
         app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="@+id/boucherie"
-        app:layout_constraintTop_toTopOf="@+id/boucherie"
+        app:layout_constraintStart_toStartOf="@+id/cat_boucherie"
+        app:layout_constraintTop_toTopOf="@+id/cat_boucherie"
         app:layout_constraintVertical_bias="0.867" />
 
     <TextView
@@ -260,10 +260,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/epicerie"
-        app:layout_constraintEnd_toEndOf="@+id/poissonnerie"
-        app:layout_constraintStart_toStartOf="@+id/poissonnerie"
-        app:layout_constraintTop_toTopOf="@+id/poissonnerie"
+        app:layout_constraintBottom_toTopOf="@+id/cat_epicerie"
+        app:layout_constraintEnd_toEndOf="@+id/cat_poissonnerie"
+        app:layout_constraintStart_toStartOf="@+id/cat_poissonnerie"
+        app:layout_constraintTop_toTopOf="@+id/cat_poissonnerie"
         app:layout_constraintVertical_bias="0.851" />
 
     <TextView
@@ -281,11 +281,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/frais"
-        app:layout_constraintEnd_toEndOf="@+id/frais"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_frais"
+        app:layout_constraintEnd_toEndOf="@+id/cat_frais"
         app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="@+id/frais"
-        app:layout_constraintTop_toTopOf="@+id/frais"
+        app:layout_constraintStart_toStartOf="@+id/cat_frais"
+        app:layout_constraintTop_toTopOf="@+id/cat_frais"
         app:layout_constraintVertical_bias="0.914" />
 
     <android.support.constraint.Guideline
@@ -310,11 +310,11 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/white"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/epicerie"
-        app:layout_constraintEnd_toEndOf="@+id/epicerie"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_epicerie"
+        app:layout_constraintEnd_toEndOf="@+id/cat_epicerie"
         app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toStartOf="@+id/epicerie"
-        app:layout_constraintTop_toTopOf="@+id/epicerie"
+        app:layout_constraintStart_toStartOf="@+id/cat_epicerie"
+        app:layout_constraintTop_toTopOf="@+id/cat_epicerie"
         app:layout_constraintVertical_bias="0.979" />
 
     <TextView
