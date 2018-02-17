@@ -34,7 +34,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="TextView"
+        android:text="AIDE &amp; MENTIONS LÉGALES"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_Intro2"
-        app:srcCompat="@drawable/logo_EPSI" />
+        app:srcCompat="@drawable/logo_epsi" />
 
     <TextView
         android:id="@+id/textView11"

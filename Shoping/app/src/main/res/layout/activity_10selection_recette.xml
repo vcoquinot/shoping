@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_ma_selection"
-    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 
     tools:context="com.example.morga.shoping.selection_recette">
 
@@ -30,7 +30,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="TextView"
+        android:text="MA SÉLECTION DE RECETTES"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/background_light"

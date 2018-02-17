@@ -35,14 +35,7 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()==R.id.aide_menu){
-            Intent aide=new Intent(this,Aide.class);
-            startActivity(aide);
 
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
 
 
