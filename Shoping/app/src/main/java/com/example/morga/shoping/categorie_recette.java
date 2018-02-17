@@ -23,23 +23,23 @@ public class categorie_recette extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    public void ClickEntree(View EntreeButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+    public void clickEntree(View entreeImageButton) {
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
-    public void ClickPlat(View PlatButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+    public void clickPlat(View platImageButton) {
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
-    public void ClickDessert(View DessertButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+    public void clickDessert(View dessertImageButton) {
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 
-    public void ClickAutre(View AutreButton) {
-        Intent intent = new Intent(categorie_recette.this, Ma_recette.class);
+    public void clickAutre(View autreImageButton) {
+        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
         startActivity(intent);
     }
 }
