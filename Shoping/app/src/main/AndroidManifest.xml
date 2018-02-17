@@ -44,7 +44,8 @@
             android:name=".liste_ingredients"
             android:label="@string/title_activity_liste_ingredients"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".Ingredients"></activity>
+        <activity android:name=".Ingredients" />
+        <activity android:name=".Aide_mentions"></activity>
     </application>
 
 </manifest>
