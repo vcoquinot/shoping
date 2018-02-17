@@ -31,7 +31,7 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, Aide.class);
+        Intent intent = new Intent(Accueil.this, mes_courses.class);
         startActivity(intent);
     }
 

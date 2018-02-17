@@ -10,6 +10,7 @@
         android:layout_width="129dp"
         android:layout_height="41dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,11 +20,12 @@
         android:id="@+id/quantity"
         android:layout_width="26dp"
         android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="number"
         android:text="3"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="319dp" />
+        app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>

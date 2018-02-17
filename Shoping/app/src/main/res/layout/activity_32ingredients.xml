@@ -75,7 +75,7 @@
 
     <ImageButton
         android:id="@+id/cat_fruits"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="12dp"
@@ -94,7 +94,7 @@
 
     <ImageButton
         android:id="@+id/cat_legumes"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="21dp"
@@ -115,7 +115,7 @@
 
     <ImageButton
         android:id="@+id/cat_boucherie"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginEnd="28dp"
         android:layout_marginStart="22dp"
@@ -139,7 +139,7 @@
 
     <ImageButton
         android:id="@+id/cat_boissons"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:alpha="0.6"
@@ -157,7 +157,7 @@
 
     <ImageButton
         android:id="@+id/cat_poissonnerie"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginTop="16dp"
         android:alpha="0.6"
@@ -175,7 +175,7 @@
 
     <ImageButton
         android:id="@+id/cat_epicerie"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="22dp"
@@ -199,7 +199,7 @@
 
     <ImageButton
         android:id="@+id/cat_frais"
-        android:layout_width="95"
+        android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="21dp"
@@ -221,7 +221,7 @@
     <EditText
         android:id="@+id/nom_nl_ingredient"
         android:layout_width="292dp"
-        android:layout_height="80"
+        android:layout_height="80dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/bt_40"
         android:editable="true"
