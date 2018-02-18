@@ -22,7 +22,6 @@
         android:fontFamily="@font/ubuntu_medium"
         android:inputType="textPersonName|number"
         android:text="4"
-        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/visuel_cat_recettes"
@@ -200,7 +199,7 @@
     <TextView
         android:id="@+id/listeIngredients"
         android:layout_width="0dp"
-        android:layout_height="211dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -248,7 +247,8 @@
         android:layout_marginTop="8dp"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:padding="8dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="12dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="@+id/listeIngredients"
         app:layout_constraintEnd_toEndOf="@+id/listeIngredients"
@@ -256,5 +256,7 @@
         app:layout_constraintStart_toStartOf="@+id/listeIngredients"
         app:layout_constraintTop_toBottomOf="@+id/ingredients"
         app:layout_constraintVertical_bias="0.313" />
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="340dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bt_40"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recette"
+        android:layout_width="313dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bt_40"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu_medium"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:text="recette"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/croix"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/recette"
+        app:srcCompat="@drawable/picto_croix_annule"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/oeil"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/oeil_voir"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/pastille_panier_ajoute"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+</android.support.constraint.ConstraintLayout>
