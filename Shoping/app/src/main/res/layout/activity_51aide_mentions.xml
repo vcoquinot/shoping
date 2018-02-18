@@ -7,25 +7,6 @@
     android:background="@drawable/gradient_accueil"
     tools:context="com.example.morga.shoping.Aide_mentions">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:fontFamily="@font/ubuntu_medium"
-        android:inputType="textMultiLine"
-        android:text="Groupe \nValérie COQUINOT \nMorgan FRAISSE \nMarc MANNOURY"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -43,8 +24,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="297dp"
-        android:layout_height="129dp"
+        android:layout_width="263dp"
+        android:layout_height="106dp"
         android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="16dp"
@@ -87,18 +68,37 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="71dp"
+        android:layout_height="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/ubuntu_medium"
         android:text="Février 2018"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="118dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="Groupe \nValérie COQUINOT \nMorgan FRAISSE \nMarc MANNOURY"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:text="Groupe \nValérie COQUINOT \nMorgan FRAISSE \nMarc MANNOURY" />
 
 
 </android.support.constraint.ConstraintLayout>
