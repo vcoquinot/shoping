@@ -23,16 +23,16 @@ public class Accueil extends AppCompatActivity {
         //Intent intent = new Intent(Accueil.this, mes_courses.class);
         //!!!!!!!!CHANGED DIRECTION TO CHECK ACTIVITY!!!!!!!!
         //Intent intent = new Intent(Accueil.this, categorie_ingredient.class);
-        Intent intent = new Intent(Accueil.this, Ma_recette.class);
+        Intent intent = new Intent(Accueil.this, mes_courses.class);
         startActivity(intent);
     }
 
     public void ClickSelection(View selectionButton) {
-        Intent intent = new Intent(Accueil.this, selection_recette.class);
+        Intent intent = new Intent(Accueil.this, Ma_recette.class);
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, mes_courses.class);
+        Intent intent = new Intent(Accueil.this, Ma_recette_creation.class);
         startActivity(intent);
     }
 
