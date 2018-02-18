@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_shoping_blanc"
         android:label="Shoping"
         android:roundIcon="@drawable/logo_shoping_blanc"
         android:supportsRtl="true"
@@ -34,14 +34,14 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".Ma_recette"
-            android:label="@string/title_activity_ma_recette"
+
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
         <activity android:name=".categorie_ingredient" />
         <activity android:name=".mes_courses" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".liste_ingredients"
-            android:label="@string/title_activity_liste_ingredients"
+
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".Ingredients"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />

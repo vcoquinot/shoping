@@ -46,7 +46,7 @@ public class selection_recette extends AppCompatActivity {
             startActivity(courses);
         }
         else if (item.getItemId()==R.id.newIngredient_menu){
-            Intent nvingredient=new Intent(this,liste_ingredients.class);
+            Intent nvingredient=new Intent(this,Ingredients.class);
             startActivity(nvingredient);
         }
         else if (item.getItemId()==R.id.aide_menu){
