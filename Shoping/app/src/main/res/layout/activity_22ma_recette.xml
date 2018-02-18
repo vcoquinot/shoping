@@ -47,7 +47,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/listeIngredients"
         app:layout_constraintVertical_bias="0.86" />
 
     <ImageView
@@ -109,12 +109,14 @@
         android:id="@+id/cat_plat"
         android:layout_width="75dp"
         android:layout_height="56dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:alpha="1"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
         app:layout_constraintEnd_toStartOf="@+id/cat_dessert"
+        app:layout_constraintStart_toEndOf="@+id/cat_entree"
         app:layout_constraintTop_toTopOf="@+id/cat_entree"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cat_plat" />
@@ -124,11 +126,13 @@
         android:layout_width="75dp"
         android:layout_height="56dp"
         android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:alpha="0.6"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
         app:layout_constraintEnd_toStartOf="@+id/cat_autre"
+        app:layout_constraintStart_toEndOf="@+id/cat_plat"
         app:layout_constraintTop_toTopOf="@+id/cat_entree"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cat_dessert" />
@@ -138,11 +142,13 @@
         android:layout_width="75dp"
         android:layout_height="56dp"
         android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:alpha="0.6"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cat_dessert"
         app:layout_constraintTop_toTopOf="@+id/cat_entree"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/cat_autre" />
@@ -194,10 +200,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/listeIngredients"
         android:layout_width="0dp"
-        android:layout_height="225dp"
-        android:layout_marginBottom="104dp"
+        android:layout_height="211dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -212,13 +218,12 @@
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preparation"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.012" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/ingredients"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
         android:layout_marginBottom="8dp"
@@ -230,26 +235,30 @@
         android:text="INGRÉDIENTS"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/editText2"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="@+id/listeIngredients"
+        app:layout_constraintEnd_toEndOf="@+id/listeIngredients"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toTopOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/listeIngredients"
+        app:layout_constraintTop_toTopOf="@+id/listeIngredients"
         app:layout_constraintVertical_bias="0.09" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_ingredients"
-        android:layout_width="339dp"
-        android:layout_height="115dp"
+        android:layout_width="338dp"
+        android:layout_height="116dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="8dp"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="@+id/editText2"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/listeIngredients"
+        app:layout_constraintEnd_toEndOf="@+id/listeIngredients"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/listeIngredients"
+        app:layout_constraintTop_toBottomOf="@+id/ingredients"
+        app:layout_constraintVertical_bias="0.313" />
 
 </android.support.constraint.ConstraintLayout>

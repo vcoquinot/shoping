@@ -60,7 +60,7 @@ public class Ma_recette extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return 200;
+            return 10;
         }
 
         class MyViewHolder extends RecyclerView.ViewHolder {

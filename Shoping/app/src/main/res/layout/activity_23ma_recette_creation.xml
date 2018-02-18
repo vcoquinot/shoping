@@ -123,47 +123,53 @@
             app:layout_constraintTop_toBottomOf="@+id/imageRecettes2"
             app:srcCompat="@drawable/cat_entree" />
 
-        <ImageButton
-            android:id="@+id/cat_plat"
-            android:layout_width="75dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginTop="8dp"
-            android:alpha="1"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
-            app:layout_constraintEnd_toStartOf="@+id/cat_dessert"
-            app:layout_constraintTop_toTopOf="@+id/cat_entree"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/cat_plat" />
+    <ImageButton
+        android:id="@+id/cat_plat"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
+        app:layout_constraintEnd_toStartOf="@+id/cat_dessert"
+        app:layout_constraintStart_toEndOf="@+id/cat_entree"
+        app:layout_constraintTop_toTopOf="@+id/cat_entree"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cat_plat" />
 
-        <ImageButton
-            android:id="@+id/cat_dessert"
-            android:layout_width="75dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginTop="8dp"
-            android:alpha="0.6"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
-            app:layout_constraintEnd_toStartOf="@+id/cat_autre"
-            app:layout_constraintTop_toTopOf="@+id/cat_entree"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/cat_dessert" />
+    <ImageButton
+        android:id="@+id/cat_dessert"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
+        app:layout_constraintEnd_toStartOf="@+id/cat_autre"
+        app:layout_constraintStart_toEndOf="@+id/cat_plat"
+        app:layout_constraintTop_toTopOf="@+id/cat_entree"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cat_dessert" />
 
-        <ImageButton
-            android:id="@+id/cat_autre"
-            android:layout_width="75dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginTop="8dp"
-            android:alpha="0.6"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/cat_entree"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/cat_autre" />
+    <ImageButton
+        android:id="@+id/cat_autre"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.6"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_entree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cat_dessert"
+        app:layout_constraintTop_toTopOf="@+id/cat_entree"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/cat_autre" />
 
     <EditText
         android:id="@+id/editText"
