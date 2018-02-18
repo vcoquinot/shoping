@@ -32,7 +32,7 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, Ma_recette_creation.class);
+        Intent intent = new Intent(Accueil.this, Liste_recettes.class);
         startActivity(intent);
     }
 
