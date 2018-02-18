@@ -11,15 +11,15 @@
         android:checkable="false"
         android:title="Mes Recettes" />
     <item
+        android:id="@+id/courses_menu"
+        android:title="Mes Courses" />
+    <item
         android:id="@+id/newIngredient_menu"
         android:title="Nouvel ingrédient"
         app:showAsAction="never" />
     <item
         android:id="@+id/newRecette_menu"
         android:title="Nouvelle recette" />
-    <item
-        android:id="@+id/courses_menu"
-        android:title="Mes Courses" />
     <item
         android:id="@+id/aide_menu"
         android:title="Aide et mentions légales" />
