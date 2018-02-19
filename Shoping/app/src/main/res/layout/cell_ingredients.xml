@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="234dp"
-        android:layout_height="34dp"
+        android:layout_height="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
@@ -29,7 +29,7 @@
         android:ems="10"
         android:fontFamily="@font/ubuntu_medium"
         android:inputType="number"
-        android:text="   u"
+        android:text=" u"
         android:textAppearance="@style/TextAppearance.AppCompat"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,17 +40,23 @@
     <TextView
         android:id="@+id/ingredient"
         android:layout_width="228dp"
-        android:layout_height="29dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="26dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:fontFamily="@font/ubuntu_medium"
+        android:inputType="textShortMessage"
         android:padding="5dp"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:singleLine="true"
         android:text="Ingrédient"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
 
 </android.support.constraint.ConstraintLayout>
