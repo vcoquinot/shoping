@@ -1,82 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/gradient_recette"
-        tools:context="com.example.morga.shoping.Ma_recette_creation">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_recette"
+    tools:context="com.example.morga.shoping.Ma_recette_creation">
 
 
-        <!--<EditText-->
-        <!--android:id="@+id/titre_recette"-->
-        <!--pp:layout_constraintStart_toStartOf="parent"-->
-        <!--t_constraintTop_toBottomOf="@+id/cat_entree"-->
-        <!--android:layout_width="327dp"-->
-        <!--android:layout_height="46dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:background="@drawable/bt_40"-->
-        <!--android:ems="10"-->
-        <!--android:fontFamily="@font/ubuntu_medium"-->
-        <!--android:inputType="textPersonName"-->
-        <!--android:text="titre de ma recette dsjfu sdjug sdju sdfuyg sdfjy sdfy sdfyj sdyj"-->
+    <!--<EditText-->
+    <!--android:id="@+id/titre_recette"-->
+    <!--pp:layout_constraintStart_toStartOf="parent"-->
+    <!--t_constraintTop_toBottomOf="@+id/cat_entree"-->
+    <!--android:layout_width="327dp"-->
+    <!--android:layout_height="46dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:background="@drawable/bt_40"-->
+    <!--android:ems="10"-->
+    <!--android:fontFamily="@font/ubuntu_medium"-->
+    <!--android:inputType="textPersonName"-->
+    <!--android:text="titre de ma recette dsjfu sdjug sdju sdfuyg sdfjy sdfy sdfyj sdyj"-->
 
-        <!--android:textAlignment="viewStart"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/cat_entree" />-->
+    <!--android:textAlignment="viewStart"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/cat_entree" />-->
 
 
-        <EditText
-            android:id="@+id/nb_convives"
-            android:layout_width="26dp"
-            android:layout_height="51dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:ems="10"
-            android:fontFamily="@font/ubuntu_medium"
-            android:inputType="textPersonName|number"
-            android:text="4"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@android:color/background_light"
-            app:layout_constraintBottom_toBottomOf="@+id/visuel_cat_recettes"
-            app:layout_constraintEnd_toEndOf="@+id/visuel_cat_recettes"
-            app:layout_constraintHorizontal_bias="0.6"
-            app:layout_constraintStart_toStartOf="@+id/visuel_cat_recettes"
-            app:layout_constraintTop_toTopOf="@+id/visuel_cat_recettes"
-            android:background="@android:color/transparent"
-            app:layout_constraintVertical_bias="0.13" />
+    <EditText
+        android:id="@+id/nb_convives"
+        android:layout_width="26dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu_medium"
+        android:inputType="textPersonName|number"
+        android:text="4"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/visuel_cat_recettes"
+        app:layout_constraintEnd_toEndOf="@+id/visuel_cat_recettes"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/visuel_cat_recettes"
+        app:layout_constraintTop_toTopOf="@+id/visuel_cat_recettes"
+        app:layout_constraintVertical_bias="0.13" />
 
-        <Button
-            android:id="@+id/ma_selection2"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/pastille_panier_ajoute"
-            android:fontFamily="@font/ubuntu_medium"
-            android:textAllCaps="false"
-            android:textColor="@android:color/background_light"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+    <Button
+        android:id="@+id/ma_selection2"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/pastille_panier_ajoute"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageRecettes2"
-            android:layout_width="114dp"
-            android:layout_height="111dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/top_ma_recette" />
+    <ImageView
+        android:id="@+id/imageRecettes2"
+        android:layout_width="114dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_ma_recette" />
 
     <TextView
         android:id="@+id/titre_cat_recettes"
@@ -97,31 +96,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageRecettes2" />
 
-        <ImageView
-            android:id="@+id/visuel_cat_recettes"
-            android:layout_width="111dp"
-            android:layout_height="101dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginTop="8dp"
-            android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="@+id/imageRecettes2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageRecettes2"
-            app:srcCompat="@drawable/nb_convives" />
+    <ImageView
+        android:id="@+id/visuel_cat_recettes"
+        android:layout_width="111dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRecettes2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRecettes2"
+        app:srcCompat="@drawable/nb_convives" />
 
-        <ImageButton
-            android:id="@+id/cat_entree"
-            android:layout_width="75dp"
-            android:layout_height="56dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="36dp"
-            android:alpha="0.6"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toStartOf="@+id/cat_plat"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageRecettes2"
-            app:srcCompat="@drawable/cat_entree" />
+    <ImageButton
+        android:id="@+id/cat_entree"
+        android:layout_width="75dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:alpha="0.6"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/cat_plat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRecettes2"
+        app:srcCompat="@drawable/cat_entree" />
 
     <ImageButton
         android:id="@+id/cat_plat"
@@ -174,11 +173,10 @@
     <EditText
         android:id="@+id/nom-recette"
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="37dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/bt_40"
         android:ems="10"
         android:fontFamily="@font/ubuntu_medium"
@@ -189,17 +187,15 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titre_cat_recettes"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintTop_toBottomOf="@+id/titre_cat_recettes" />
 
     <EditText
         android:id="@+id/listeIngredients"
         android:layout_width="0dp"
         android:layout_height="211dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -212,11 +208,10 @@
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/preparation"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintTop_toBottomOf="@+id/preparation" />
 
     <TextView
         android:id="@+id/ingredients"
@@ -258,16 +253,10 @@
         app:layout_constraintVertical_bias="0.313" />
 
 
-
-
-
-
-
     <TextView
         android:id="@+id/preparation"
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="47dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -278,12 +267,10 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom-recette"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/nom-recette" />
 
 
 </android.support.constraint.ConstraintLayout>
