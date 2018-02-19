@@ -38,6 +38,7 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
         <activity android:name=".categorie_ingredient" />
+        <activity android:name=".Ma_recette_creation" />
         <activity android:name=".mes_courses" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity
             android:name=".liste_ingredients"
