@@ -106,6 +106,10 @@ public class Ma_recette extends AppCompatActivity {
             Intent recettes=new Intent(this,categorie_recette.class);
             startActivity(recettes);
         }
+        else if (item.getItemId()==R.id.newRecette_menu){
+            Intent recettes=new Intent(this,Ma_recette_creation.class);
+            startActivity(recettes);
+        }
         return super.onOptionsItemSelected(item);
     }
 
