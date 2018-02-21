@@ -24,7 +24,7 @@ public class Liste_recettes extends AbstractActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_21liste_recettes);
 
-        ui_listeRecettesRecycler = findViewById(R.id.recycler_courses);
+        ui_listeRecettesRecycler = findViewById(R.id.recycler__recettes);
 //
 //
         ui_listeRecettesRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -57,11 +57,11 @@ public class Liste_recettes extends AbstractActivity {
             public MyViewHolder(View vue) {
 
                 super(vue);
-                ui_titleLabel = vue.findViewById(R.id.nom_recette);
+                ui_titleLabel = vue.findViewById(R.id.titre_cat_recettes);
 
             }
 
-            public void remplirVue(String article, int quantity) {
+            public void remplirVue(String article) {
                 ui_titleLabel.setText(article);
             }
 

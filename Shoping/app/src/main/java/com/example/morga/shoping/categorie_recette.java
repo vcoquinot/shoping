@@ -20,22 +20,24 @@ public class categorie_recette extends AbstractActivity {
 
 
     public void clickEntree(View entreeImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
-        startActivity(intent);
+        Intent activity_entree = new Intent(this, Liste_recettes.class);
+        activity_entree.putExtra("cat_recettes", "ENTRÉE");
+        startActivity(activity_entree);
+
     }
 
     public void clickPlat(View platImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
-        startActivity(intent);
+//        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
+//        startActivity(intent);
     }
 
     public void clickDessert(View dessertImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
-        startActivity(intent);
+//        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
+//        startActivity(intent);
     }
 
     public void clickAutre(View autreImageButton) {
-        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
-        startActivity(intent);
+//        Intent intent = new Intent(categorie_recette.this, Liste_recettes.class);
+//        startActivity(intent);
     }
 }
