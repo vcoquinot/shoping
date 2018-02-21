@@ -6,51 +6,34 @@
     android:layout_height="wrap_content"
     tools:layout_editor_absoluteY="25dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="234dp"
-        android:layout_height="34dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="2dp"
-        android:background="@drawable/bt_40"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/quantite"
         android:layout_width="30dp"
-        android:layout_height="38dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/bt_40"
+        android:layout_height="26dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginStart="8dp"
         android:ems="10"
         android:fontFamily="@font/ubuntu_medium"
         android:inputType="number"
+        android:padding="1dp"
         android:text="   u"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/ingredient"
         app:layout_constraintTop_toTopOf="@+id/ingredient" />
 
     <TextView
         android:id="@+id/ingredient"
         android:layout_width="228dp"
-        android:layout_height="29dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_height="26dp"
         android:ems="10"
+        android:fontFamily="@font/ubuntu_medium"
         android:inputType="textPersonName"
-        android:padding="5dp"
+        android:padding="1dp"
+        android:paddingStart="8dp"
         android:text="Ingrédient"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp" />
 
 </android.support.constraint.ConstraintLayout>

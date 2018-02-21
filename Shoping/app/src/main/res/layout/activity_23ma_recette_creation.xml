@@ -193,16 +193,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titre_cat_recettes"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <EditText
         android:id="@+id/listeIngredients"
         android:layout_width="0dp"
-        android:layout_height="211dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="125dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/bt_40"
         android:ems="10"
         android:fontFamily="@font/ubuntu_medium"
@@ -214,9 +212,10 @@
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preparation"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/ingredients"
@@ -241,7 +240,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_ingredients"
         android:layout_width="338dp"
-        android:layout_height="116dp"
+        android:layout_height="62dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -255,22 +254,14 @@
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="@+id/listeIngredients"
         app:layout_constraintTop_toBottomOf="@+id/ingredients"
-        app:layout_constraintVertical_bias="0.313" />
-
-
-
-
-
-
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/preparation"
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="116dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/bt_40"
         android:fontFamily="@font/ubuntu_medium"
         android:padding="12dp"
@@ -278,12 +269,23 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@android:color/black"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nom-recette"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/nom-recette" />
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="83dp"
+        android:scrollbarStyle="insideInset"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="505dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
