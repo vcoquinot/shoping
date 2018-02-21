@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
+import io.realm.Realm;
+
 public class Accueil extends AppCompatActivity {
 
     @Override
@@ -15,6 +17,7 @@ public class Accueil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_00accueil);
+        Realm.init(this);
 
 
     }
@@ -28,11 +31,11 @@ public class Accueil extends AppCompatActivity {
     }
 
     public void ClickSelection(View selectionButton) {
-        Intent intent = new Intent(Accueil.this, Ma_recette.class);
+        Intent intent = new Intent(Accueil.this, selection_recette.class);
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, Ma_recette_creation.class);
+        Intent intent = new Intent(Accueil.this, categorie_recette.class);
         startActivity(intent);
     }
 

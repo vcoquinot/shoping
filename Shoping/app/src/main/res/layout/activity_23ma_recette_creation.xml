@@ -9,26 +9,6 @@
         tools:context="com.example.morga.shoping.Ma_recette_creation">
 
 
-        <!--<EditText-->
-        <!--android:id="@+id/titre_recette"-->
-        <!--pp:layout_constraintStart_toStartOf="parent"-->
-        <!--t_constraintTop_toBottomOf="@+id/cat_entree"-->
-        <!--android:layout_width="327dp"-->
-        <!--android:layout_height="46dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:background="@drawable/bt_40"-->
-        <!--android:ems="10"-->
-        <!--android:fontFamily="@font/ubuntu_medium"-->
-        <!--android:inputType="textPersonName"-->
-        <!--android:text="titre de ma recette dsjfu sdjug sdju sdfuyg sdfjy sdfy sdfyj sdyj"-->
-
-        <!--android:textAlignment="viewStart"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toStartOf="parent"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/cat_entree" />-->
-
 
         <EditText
             android:id="@+id/nb_convives"
