@@ -10,14 +10,13 @@
         android:id="@+id/bt_croix2"
         android:layout_width="26dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintVertical_bias="0.714"
         app:srcCompat="@drawable/picto_croix_annule" />
 
     <TextView
@@ -32,18 +31,19 @@
         android:text="Ingrédient"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="31dp" />
+        tools:layout_editor_absoluteX="4dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="28dp"
-        android:layout_height="36dp"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
         android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
         app:layout_constraintEnd_toStartOf="@+id/bt_croix2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/recette_ajoute" />
+        app:layout_constraintTop_toTopOf="@+id/name"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/recette_ajoute2" />
 
 </android.support.constraint.ConstraintLayout>
