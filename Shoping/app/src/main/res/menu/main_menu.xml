@@ -24,9 +24,6 @@
         android:id="@+id/newRecette_menu"
         android:title="Nouvelle recette" />
     <item
-        android:id="@+id/crea_recette"
-        android:title="Ma recette création" />
-    <item
         android:id="@+id/catIngr"
         android:title="Catégorie ingredient" />
     <item

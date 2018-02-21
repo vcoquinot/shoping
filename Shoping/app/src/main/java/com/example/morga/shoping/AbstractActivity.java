@@ -43,10 +43,7 @@ public class AbstractActivity extends AppCompatActivity {
             Intent aide=new Intent(this,Aide_mentions.class);
             startActivity(aide);
         }
-        else if (item.getItemId()==R.id.newRecette_menu){
-            Intent recettes=new Intent(this,Ma_recette_creation.class);
-            startActivity(recettes);
-        }
+
         else if (item.getItemId()==R.id.listIngr){
             Intent liste_ingredients=new Intent(this,liste_ingredients.class);
             startActivity(liste_ingredients);
