@@ -21,10 +21,11 @@ public class AbstractActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-    
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         if (item.getItemId()== R.id.ma_selection_menu){
             Intent selection=new Intent(this,selection_recette.class);
             startActivity(selection);
@@ -43,7 +44,7 @@ public class AbstractActivity extends AppCompatActivity {
             startActivity(aide);
         }
         else if (item.getItemId()==R.id.newRecette_menu){
-            Intent recettes=new Intent(this,categorie_recette.class);
+            Intent recettes=new Intent(this,Ma_recette_creation.class);
             startActivity(recettes);
         }
         else if (item.getItemId()==R.id.listIngr){
@@ -54,9 +55,13 @@ public class AbstractActivity extends AppCompatActivity {
             Intent categorie_ingr=new Intent(this,categorie_ingredient.class);
             startActivity(categorie_ingr);
         }
-        else if (item.getItemId()==R.id.crea_recette){
-            Intent creaRecette=new Intent(this,Ma_recette_creation.class);
-            startActivity(creaRecette);
+        else if (item.getItemId()==R.id.recettes_menu){
+            Intent categorie_recette=new Intent(this,categorie_recette.class);
+            startActivity(categorie_recette);
+        }
+        else if (item.getItemId()==R.id.accueil){
+            Intent accueil=new Intent(this,Accueil.class);
+            startActivity(accueil);
         }
 
         return super.onOptionsItemSelected(item);
