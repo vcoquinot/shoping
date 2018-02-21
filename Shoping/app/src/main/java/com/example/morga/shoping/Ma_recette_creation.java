@@ -11,7 +11,7 @@ import android.view.MenuItem;
  * Created by valerieoquinot on 17/02/2018.
  */
 
-public class Ma_recette_creation extends AppCompatActivity {
+public class Ma_recette_creation extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

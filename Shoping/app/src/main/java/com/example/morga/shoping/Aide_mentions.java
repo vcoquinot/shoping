@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-public class Aide_mentions extends AppCompatActivity {
+public class Aide_mentions extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

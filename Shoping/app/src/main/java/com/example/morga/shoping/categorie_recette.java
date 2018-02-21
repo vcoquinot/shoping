@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
-public class categorie_recette extends AppCompatActivity {
+public class categorie_recette extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

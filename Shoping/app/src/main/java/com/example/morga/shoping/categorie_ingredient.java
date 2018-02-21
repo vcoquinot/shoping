@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class categorie_ingredient extends AppCompatActivity {
+public class categorie_ingredient extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class mes_courses extends AppCompatActivity {
+public class mes_courses extends AbstractActivity {
 
     private RecyclerView ui_listecourseRecycler;
 

@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Ma_recette extends AppCompatActivity {
+public class Ma_recette extends AbstractActivity {
     private RecyclerView ui_listeIngredientsRecycler;
 
     @Override
