@@ -21,6 +21,15 @@
         android:id="@+id/newRecette_menu"
         android:title="Nouvelle recette" />
     <item
+        android:id="@+id/crea_recette"
+        android:title="Ma recette création" />
+    <item
+        android:id="@+id/catIngr"
+        android:title="Catégorie ingredient" />
+    <item
+        android:id="@+id/listIngr"
+        android:title="Liste ingredients" />
+    <item
         android:id="@+id/aide_menu"
         android:title="Aide et mentions légales" />
 </menu>

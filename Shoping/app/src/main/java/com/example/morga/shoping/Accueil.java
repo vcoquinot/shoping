@@ -28,7 +28,7 @@ public class Accueil extends AppCompatActivity {
     }
 
     public void ClickSelection(View selectionButton) {
-        Intent intent = new Intent(Accueil.this, Ma_recette.class);
+        Intent intent = new Intent(Accueil.this, selection_recette.class);
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
