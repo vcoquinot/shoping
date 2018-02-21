@@ -2,6 +2,9 @@ package com.example.morga.shoping;
 
 import java.util.ArrayList;
 
+import io.realm.RealmList;
+import io.realm.RealmObject;
+
 /**
  * Created by morga on 21/02/2018.
  */

@@ -14,6 +14,9 @@
         android:checkable="false"
         android:title="Mes Recettes" />
     <item
+        android:id="@+id/ma_recette_menu"
+        android:title="Ma recette" />
+    <item
         android:id="@+id/courses_menu"
         android:title="Mes Courses" />
     <item

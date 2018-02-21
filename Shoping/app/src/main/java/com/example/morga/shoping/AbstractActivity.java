@@ -43,7 +43,10 @@ public class AbstractActivity extends AppCompatActivity {
             Intent aide=new Intent(this,Aide_mentions.class);
             startActivity(aide);
         }
-
+        else if (item.getItemId()==R.id.newRecette_menu){
+            Intent nvrecette=new Intent(this,Ma_recette_creation.class);
+            startActivity(nvrecette);
+        }
         else if (item.getItemId()==R.id.listIngr){
             Intent liste_ingredients=new Intent(this,liste_ingredients.class);
             startActivity(liste_ingredients);
@@ -59,6 +62,10 @@ public class AbstractActivity extends AppCompatActivity {
         else if (item.getItemId()==R.id.accueil){
             Intent accueil=new Intent(this,Accueil.class);
             startActivity(accueil);
+        }
+        else if (item.getItemId()==R.id.ma_recette_menu){
+            Intent maRecette=new Intent(this,Ma_recette.class);
+            startActivity(maRecette);
         }
 
         return super.onOptionsItemSelected(item);

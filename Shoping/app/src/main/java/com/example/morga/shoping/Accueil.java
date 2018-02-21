@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.Window;
 
 import io.realm.Realm;
+import io.realm.RealmModel;
+import io.realm.RealmQuery;
+import io.realm.RealmResults;
 
 public class Accueil extends AppCompatActivity {
 
@@ -18,14 +21,24 @@ public class Accueil extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_00accueil);
         Realm.init(this);
+        RealmResults<Ingredients_class> _listIndredient;
+        Realm realm = Realm.getDefaultInstance();
+        _listIndredient=realm.where(Ingredients_class.class).findAll();
+        if (_listIndredient.size()==0){
+            realm.beginTransaction();
+            realm.copyToRealm(new Ingredients_class("carotte","légume"));
+            realm.copyToRealm(new Ingredients_class("brocoli","légume"));
+            realm.copyToRealm(new Ingredients_class("courgette","légume"));
+            realm.copyToRealm(new Ingredients_class("tomate","fruit"));
+            realm.copyToRealm(new Ingredients_class("banane","fruit"));
+            realm.commitTransaction();
+        }
 
 
     }
 
     public void ClickCourse(View courseButton) {
-        //Intent intent = new Intent(Accueil.this, mes_courses.class);
-        //!!!!!!!!CHANGED DIRECTION TO CHECK ACTIVITY!!!!!!!!
-        //Intent intent = new Intent(Accueil.this, categorie_ingredient.class);
+
         Intent intent = new Intent(Accueil.this, mes_courses.class);
         startActivity(intent);
     }

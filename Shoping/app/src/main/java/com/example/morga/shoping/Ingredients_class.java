@@ -8,7 +8,7 @@ import io.realm.RealmObject;
 
 public class Ingredients_class extends RealmObject {
     String name;
-    int category;
+    String category;
 
 
     public Ingredients_class() {
@@ -22,15 +22,15 @@ public class Ingredients_class extends RealmObject {
         this.name = name;
     }
 
-    public int getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(int category) {
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    public Ingredients_class(String name, int category) {
+    public Ingredients_class(String name, String category) {
         this.name = name;
         this.category = category;
     }

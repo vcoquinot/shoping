@@ -146,5 +146,14 @@
         app:layout_constraintTop_toBottomOf="@+id/cat_fruits"
         app:srcCompat="@drawable/ing_frais" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler__ingredient"
+        android:layout_width="395dp"
+        android:layout_height="355dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

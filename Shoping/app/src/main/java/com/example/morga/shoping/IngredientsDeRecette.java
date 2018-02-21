@@ -1,5 +1,7 @@
 package com.example.morga.shoping;
 
+import io.realm.RealmObject;
+
 /**
  * Created by morga on 21/02/2018.
  */
