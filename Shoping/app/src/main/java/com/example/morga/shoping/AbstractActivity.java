@@ -1,6 +1,8 @@
 package com.example.morga.shoping;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -18,6 +20,8 @@ public class AbstractActivity extends AppCompatActivity {
         inflater.inflate(R.menu.main_menu,menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -41,6 +45,18 @@ public class AbstractActivity extends AppCompatActivity {
         else if (item.getItemId()==R.id.newRecette_menu){
             Intent recettes=new Intent(this,categorie_recette.class);
             startActivity(recettes);
+        }
+        else if (item.getItemId()==R.id.listIngr){
+            Intent liste_ingredients=new Intent(this,liste_ingredients.class);
+            startActivity(liste_ingredients);
+        }
+        else if (item.getItemId()==R.id.catIngr){
+            Intent categorie_ingr=new Intent(this,categorie_ingredient.class);
+            startActivity(categorie_ingr);
+        }
+        else if (item.getItemId()==R.id.crea_recette){
+            Intent creaRecette=new Intent(this,Ma_recette_creation.class);
+            startActivity(creaRecette);
         }
 
         return super.onOptionsItemSelected(item);
