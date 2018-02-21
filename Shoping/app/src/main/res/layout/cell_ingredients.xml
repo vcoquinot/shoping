@@ -7,16 +7,17 @@
     tools:layout_editor_absoluteY="25dp">
 
     <ImageButton
-        android:id="@+id/bt_croix2"
-        android:layout_width="26dp"
-        android:layout_height="25dp"
-        android:layout_marginEnd="16dp"
+        android:id="@+id/del_button1"
+        android:layout_width="73dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="168dp"
+        android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/name"
-        app:layout_constraintVertical_bias="0.714"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/picto_croix_annule" />
 
     <TextView
@@ -41,9 +42,28 @@
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="@+id/name"
-        app:layout_constraintEnd_toStartOf="@+id/bt_croix2"
+        app:layout_constraintEnd_toStartOf="@+id/del_button1"
         app:layout_constraintTop_toTopOf="@+id/name"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/recette_ajoute2" />
+
+    <Button
+        android:id="@+id/del_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="317dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
