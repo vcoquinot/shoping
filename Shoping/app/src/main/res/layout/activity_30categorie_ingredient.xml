@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_ingredients"
     android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
-    tools:context="com.example.morga.shoping.categorie_ingredient">
+    tools:context="com.example.morga.shoping.categorie_ingredient30">
 
     <ImageView
         android:id="@+id/ingredients"

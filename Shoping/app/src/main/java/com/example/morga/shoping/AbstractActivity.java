@@ -1,8 +1,6 @@
 package com.example.morga.shoping;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,44 +25,44 @@ public class AbstractActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId()== R.id.ma_selection_menu){
-            Intent selection=new Intent(this,selection_recette.class);
+            Intent selection=new Intent(this,selection_recette10.class);
             startActivity(selection);
 
         }
         else if (item.getItemId()==R.id.courses_menu){
-            Intent courses=new Intent(this,mes_courses.class);
+            Intent courses=new Intent(this,mes_courses40.class);
             startActivity(courses);
         }
         else if (item.getItemId()==R.id.newIngredient_menu){
-            Intent nvingredient=new Intent(this,Ingredients.class);
+            Intent nvingredient=new Intent(this,Ingredients32.class);
             startActivity(nvingredient);
         }
         else if (item.getItemId()==R.id.aide_menu){
-            Intent aide=new Intent(this,Aide_mentions.class);
+            Intent aide=new Intent(this,Aide_mentions51.class);
             startActivity(aide);
         }
         else if (item.getItemId()==R.id.newRecette_menu){
-            Intent nvrecette=new Intent(this,Ma_recette_creation.class);
+            Intent nvrecette=new Intent(this,Ma_recette_creation23.class);
             startActivity(nvrecette);
         }
         else if (item.getItemId()==R.id.listIngr){
-            Intent liste_ingredients=new Intent(this,liste_ingredients.class);
+            Intent liste_ingredients=new Intent(this,liste_ingredients31.class);
             startActivity(liste_ingredients);
         }
         else if (item.getItemId()==R.id.catIngr){
-            Intent categorie_ingr=new Intent(this,categorie_ingredient.class);
+            Intent categorie_ingr=new Intent(this,categorie_ingredient30.class);
             startActivity(categorie_ingr);
         }
         else if (item.getItemId()==R.id.recettes_menu){
-            Intent categorie_recette=new Intent(this,categorie_recette.class);
+            Intent categorie_recette=new Intent(this,categorie_recette20.class);
             startActivity(categorie_recette);
         }
         else if (item.getItemId()==R.id.accueil){
-            Intent accueil=new Intent(this,Accueil.class);
+            Intent accueil=new Intent(this,Accueil00.class);
             startActivity(accueil);
         }
         else if (item.getItemId()==R.id.ma_recette_menu){
-            Intent maRecette=new Intent(this,Ma_recette.class);
+            Intent maRecette=new Intent(this,Ma_recette22.class);
             startActivity(maRecette);
         }
 

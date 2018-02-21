@@ -7,7 +7,7 @@
     android:background="@drawable/gradient_accueil"
     android:minHeight="82dp"
     android:theme="@style/AppTheme.NoActionBar"
-    tools:context="com.example.morga.shoping.Accueil">
+    tools:context="com.example.morga.shoping.Accueil00">
 
     <Button
         android:id="@+id/Ma_selection"

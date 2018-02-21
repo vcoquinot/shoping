@@ -1,19 +1,15 @@
 package com.example.morga.shoping;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
 import io.realm.Realm;
-import io.realm.RealmModel;
-import io.realm.RealmQuery;
 import io.realm.RealmResults;
 
-public class Accueil extends AppCompatActivity {
+public class Accueil00 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,16 +35,16 @@ public class Accueil extends AppCompatActivity {
 
     public void ClickCourse(View courseButton) {
 
-        Intent intent = new Intent(Accueil.this, mes_courses.class);
+        Intent intent = new Intent(Accueil00.this, mes_courses40.class);
         startActivity(intent);
     }
 
     public void ClickSelection(View selectionButton) {
-        Intent intent = new Intent(Accueil.this, selection_recette.class);
+        Intent intent = new Intent(Accueil00.this, selection_recette10.class);
         startActivity(intent);
     }
     public void ClickRecette(View recetteButton) {
-        Intent intent = new Intent(Accueil.this, categorie_recette.class);
+        Intent intent = new Intent(Accueil00.this, categorie_recette20.class);
         startActivity(intent);
     }
 

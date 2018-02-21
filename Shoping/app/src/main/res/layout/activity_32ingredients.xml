@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_ingredients"
-    tools:context="com.example.morga.shoping.Ingredients">
+    tools:context="com.example.morga.shoping.Ingredients32">
 
     <Button
         android:id="@+id/annule_creation_ingredient"

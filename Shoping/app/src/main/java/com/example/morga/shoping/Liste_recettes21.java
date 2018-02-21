@@ -1,22 +1,14 @@
 package com.example.morga.shoping;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Liste_recettes extends AbstractActivity {
+public class Liste_recettes21 extends AbstractActivity {
     private RecyclerView ui_listeRecettesRecycler;
 
     @Override
@@ -29,10 +21,10 @@ public class Liste_recettes extends AbstractActivity {
 //
         ui_listeRecettesRecycler.setLayoutManager(new LinearLayoutManager(this));
 //
-        ui_listeRecettesRecycler.setAdapter(new Liste_recettes.AdapterRecettes());
+        ui_listeRecettesRecycler.setAdapter(new Liste_recettes21.AdapterRecettes());
     }
 
-    class AdapterRecettes extends RecyclerView.Adapter<Liste_recettes.AdapterRecettes.MyViewHolder> {
+    class AdapterRecettes extends RecyclerView.Adapter<Liste_recettes21.AdapterRecettes.MyViewHolder> {
 
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

@@ -12,7 +12,7 @@ import android.widget.Toast;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
-public class liste_ingredients extends AbstractActivity {
+public class liste_ingredients31 extends AbstractActivity {
     private RecyclerView ui_recyclerIngredients;
 
     @Override

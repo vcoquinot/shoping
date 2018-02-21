@@ -1,14 +1,12 @@
 package com.example.morga.shoping;
 
-import io.realm.RealmObject;
-
 /**
  * Created by morga on 21/02/2018.
  */
 
 public class IngredientsDeRecette {
     int quantity;
-    Ingredients ingredient;
+    Ingredients32 ingredient;
 
     public IngredientsDeRecette() {
     }
@@ -21,15 +19,15 @@ public class IngredientsDeRecette {
         this.quantity = quantity;
     }
 
-    public Ingredients getIngredient() {
+    public Ingredients32 getIngredient() {
         return ingredient;
     }
 
-    public void setIngredient(Ingredients ingredient) {
+    public void setIngredient(Ingredients32 ingredient) {
         this.ingredient = ingredient;
     }
 
-    public IngredientsDeRecette(int quantity, Ingredients ingredient) {
+    public IngredientsDeRecette(int quantity, Ingredients32 ingredient) {
         this.quantity = quantity;
         this.ingredient = ingredient;
     }

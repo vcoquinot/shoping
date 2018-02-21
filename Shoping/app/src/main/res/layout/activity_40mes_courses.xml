@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_courses"
-    tools:context="com.example.morga.shoping.mes_courses">
+    tools:context="com.example.morga.shoping.mes_courses40">
 
     <ImageView
         android:id="@+id/imageView2"

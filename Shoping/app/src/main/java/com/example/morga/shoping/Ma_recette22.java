@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Ma_recette extends AbstractActivity {
+public class Ma_recette22 extends AbstractActivity {
     private RecyclerView ui_listeIngredientsRecycler;
 
     @Override
@@ -48,7 +48,7 @@ public class Ma_recette extends AbstractActivity {
 
         @Override
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View vue = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_ingredients, parent, false);
+            View vue = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_recettes, parent, false);
             MyViewHolder holder = new MyViewHolder(vue);
             return holder;
         }

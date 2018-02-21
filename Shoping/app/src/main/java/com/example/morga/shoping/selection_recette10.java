@@ -11,7 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-public class selection_recette extends AbstractActivity {
+public class selection_recette10 extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
