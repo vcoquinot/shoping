@@ -33,7 +33,9 @@ public class liste_ingredients31 extends AbstractActivity {
         public AdapterIngredients() {
 
             Realm realm = Realm.getDefaultInstance();
-            _listIngredient = realm.where(Ingredients_class.class).findAll();
+
+//            _listIngredient = realm.where(Ingredients_class.class).findAll();
+            _listIngredient = realm.where(Ingredients_class.class).equalTo("category", "poissonnerie").findAll();
 
         }
         void supprimerIngredient(Ingredients_class ingredientASupprimer, int position){
