@@ -74,7 +74,7 @@
 
 
     <ImageButton
-        android:id="@+id/cat_fruits"
+        android:id="@+id/cat_fruit"
         android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginStart="28dp"
@@ -93,7 +93,7 @@
         app:srcCompat="@drawable/ing_fruits" />
 
     <ImageButton
-        android:id="@+id/cat_legumes"
+        android:id="@+id/cat_legume"
         android:layout_width="95dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
@@ -108,10 +108,10 @@
         android:paddingStart="5dp"
         android:paddingTop="5dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/cat_fruits"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_fruit"
         app:layout_constraintEnd_toStartOf="@+id/cat_boucherie"
-        app:layout_constraintStart_toEndOf="@+id/cat_fruits"
-        app:layout_constraintTop_toTopOf="@+id/cat_fruits"
+        app:layout_constraintStart_toEndOf="@+id/cat_fruit"
+        app:layout_constraintTop_toTopOf="@+id/cat_fruit"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ing_legumes" />
 
@@ -130,9 +130,9 @@
         android:paddingStart="5dp"
         android:paddingTop="5dp"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/cat_legumes"
+        app:layout_constraintBottom_toBottomOf="@+id/cat_legume"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cat_legumes"
+        app:layout_constraintTop_toTopOf="@+id/cat_legume"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ing_boucherie" />
 
@@ -168,8 +168,8 @@
         android:paddingStart="5dp"
         android:paddingTop="5dp"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="@+id/cat_fruits"
-        app:layout_constraintTop_toBottomOf="@+id/cat_fruits"
+        app:layout_constraintStart_toStartOf="@+id/cat_fruit"
+        app:layout_constraintTop_toBottomOf="@+id/cat_fruit"
         app:srcCompat="@drawable/ing_poissonnerie" />
 
     <ImageButton

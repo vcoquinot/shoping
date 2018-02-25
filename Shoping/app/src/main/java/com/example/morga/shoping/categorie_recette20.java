@@ -8,6 +8,7 @@ import android.widget.Toast;
 public class categorie_recette20 extends AbstractActivity {
 
     public String ContentText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

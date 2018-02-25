@@ -17,10 +17,9 @@ public class Liste_recettes21 extends AbstractActivity {
         setContentView(R.layout.activity_21liste_recettes);
 
         ui_listeRecettesRecycler = findViewById(R.id.recycler__recettes);
-//
-//
+
         ui_listeRecettesRecycler.setLayoutManager(new LinearLayoutManager(this));
-//
+
         ui_listeRecettesRecycler.setAdapter(new Liste_recettes21.AdapterRecettes());
     }
 
