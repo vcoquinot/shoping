@@ -13,11 +13,16 @@ import android.widget.Toast;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
+import io.realm.RealmObject;
+
 
 public class liste_ingredients31 extends AbstractActivity {
     private RecyclerView ui_recyclerIngredients;
     private ImageButton ui_picto;
     public String ContentText;
+    public String laCategorie;
+    public RealmResults<Ingredients_class> _listIngredient;;
+
 
 
     @Override
@@ -27,6 +32,12 @@ public class liste_ingredients31 extends AbstractActivity {
 
         setContentView(R.layout.activity_31_liste_ingredients);
 
+        laCategorie = getIntent().getStringExtra("cat_ingredients");
+
+        Realm realm = Realm.getDefaultInstance();
+
+        _listIngredient = realm.where(Ingredients_class.class).equalTo("category", laCategorie).findAll();
+
         ui_recyclerIngredients = findViewById(R.id.recycler__ingredient);
         ui_recyclerIngredients.setLayoutManager(new LinearLayoutManager(this));
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
@@ -34,34 +45,53 @@ public class liste_ingredients31 extends AbstractActivity {
     }
 
     public void clickCatFruit(View cat_fruit) {
-        System.out.println("----------------------------- Cick sur bt catégorie fruit");
-//        RealmResults<Ingredients_class> _listIngredient;
-//        Realm realm = Realm.getDefaultInstance();
-//        _listIngredient = realm.where(Ingredients_class.class).equalTo("category", "fruit").findAll();
-        Intent intent = new Intent(liste_ingredients31.this, liste_ingredients31.class);
-        intent.putExtra("cat_ingredients", "fruit");
-        intent.putExtra(Intent.EXTRA_TEXT, ContentText);
-        startActivity(intent);
+        laCategorie = "fruit";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatLegume(View cat_legume) {
-        Intent intent = new Intent(liste_ingredients31.this, liste_ingredients31.class);
-        intent.putExtra("cat_ingredients", "légume");
-        intent.putExtra(Intent.EXTRA_TEXT, ContentText);
-        startActivity(intent);
+        laCategorie = "légume";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
+    public void clickCatBoucherie(View cat_boucherie) {
+        laCategorie = "boucherie";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
+    }
 
+    public void clickCatPoissonnerie(View cat_poissonnerie) {
+        laCategorie = "poissonnerie";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
+    }
+
+    public void clickCatFrais(View cat_frais) {
+        laCategorie = "frais";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
+    }
+
+    public void clickCatEpicerie(View cat_epicerie) {
+        laCategorie = "épicerie";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
+    }
+
+    public void clickCatBoissons(View cat_boissons) {
+        laCategorie = "boissons";
+        ui_recyclerIngredients.setAdapter(new AdapterIngredients());
+    }
 
     class AdapterIngredients extends RecyclerView.Adapter<AdapterIngredients.IngredientsHolder> {
-        RealmResults<Ingredients_class> _listIngredient;
+//        RealmResults<Ingredients_class> _listIngredient;
 
         public AdapterIngredients() {
 
             Realm realm = Realm.getDefaultInstance();
 
-            String laCategorie = getIntent().getStringExtra("cat_ingredients");
+//            String laCategorie = getIntent().getStringExtra("cat_ingredients");
             _listIngredient = realm.where(Ingredients_class.class).equalTo("category", laCategorie).findAll();
+//            System.out.println("---------------------Size------ " + _listIngredient.size());
+//            System.out.println("---------------------AdapterIngredients");
+//            System.out.println("---------------------laCategorie------ " + laCategorie);
+
 
 
             if (laCategorie.equals("fruit")) {
@@ -95,6 +125,7 @@ public class liste_ingredients31 extends AbstractActivity {
             else if (laCategorie.equals("boissons")) {
                 ui_picto = findViewById(R.id.cat_boissons);
                 ui_picto.setImageAlpha(255);
+                notifyDataSetChanged();
             }
 //            notifyDataSetChanged();
 
