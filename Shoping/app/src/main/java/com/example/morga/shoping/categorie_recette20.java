@@ -40,4 +40,3 @@ public class categorie_recette20 extends AbstractActivity {
 //        startActivity(intent);
     }
 }
-s
