@@ -6,7 +6,7 @@ package com.example.morga.shoping;
 
 public class IngredientsDeRecette {
     int quantity;
-    Ingredients32 ingredient;
+    Ingredients_class ingredient;
 
     public IngredientsDeRecette() {
     }
@@ -19,15 +19,15 @@ public class IngredientsDeRecette {
         this.quantity = quantity;
     }
 
-    public Ingredients32 getIngredient() {
+    public Ingredients_class getIngredient() {
         return ingredient;
     }
 
-    public void setIngredient(Ingredients32 ingredient) {
+    public void setIngredient(Ingredients_class ingredient) {
         this.ingredient = ingredient;
     }
 
-    public IngredientsDeRecette(int quantity, Ingredients32 ingredient) {
+    public IngredientsDeRecette(int quantity, Ingredients_class ingredient) {
         this.quantity = quantity;
         this.ingredient = ingredient;
     }

@@ -21,12 +21,27 @@ public class Accueil00 extends AppCompatActivity {
         Realm realm = Realm.getDefaultInstance();
         _listIndredient=realm.where(Ingredients_class.class).findAll();
         if (_listIndredient.size()==0){
+
+
             realm.beginTransaction();
-            realm.copyToRealm(new Ingredients_class("carotte","légume"));
-            realm.copyToRealm(new Ingredients_class("brocoli","légume"));
-            realm.copyToRealm(new Ingredients_class("courgette","légume"));
-            realm.copyToRealm(new Ingredients_class("tomate","fruit"));
-            realm.copyToRealm(new Ingredients_class("banane","fruit"));
+
+            //            ingrédients de départ
+            realm.copyToRealm(new Ingredients_class("Carotte","légume"));
+            realm.copyToRealm(new Ingredients_class("Brocoli","légume"));
+            realm.copyToRealm(new Ingredients_class("Courgette","légume"));
+            realm.copyToRealm(new Ingredients_class("Champigon","légume"));
+            realm.copyToRealm(new Ingredients_class("Oignons","légume"));
+            realm.copyToRealm(new Ingredients_class("Tomate","fruit"));
+            realm.copyToRealm(new Ingredients_class("Banane","fruit"));
+            realm.copyToRealm(new Ingredients_class("Boeuf","boucherie"));
+            realm.copyToRealm(new Ingredients_class("Lapin","boucherie"));
+            realm.copyToRealm(new Ingredients_class("Lotte","poissonnerie"));
+            realm.copyToRealm(new Ingredients_class("Saumon","poissonnerie"));
+            realm.copyToRealm(new Ingredients_class("Fromage","frais"));
+            realm.copyToRealm(new Ingredients_class("Chocolat","épicerie"));
+            realm.copyToRealm(new Ingredients_class("Vin blanc","boissons"));
+
+
             realm.commitTransaction();
         }
 
