@@ -97,7 +97,7 @@ public class liste_ingredients31 extends AbstractActivity {
             if (laCategorie.equals("fruit")) {
                 ui_picto = findViewById(R.id.cat_fruit);
 //                ui_picto.setImageAlpha(255);
-                ui_picto.setBackgroundColor(128);
+//                ui_picto.setBackgroundColor(#555000);
 //                ui_picto.drawableStateChanged ();
             }
             else if (laCategorie.equals("légume")) {
