@@ -8,7 +8,6 @@ import android.view.Window;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
-import io.realm.RealmList;
 
 public class Accueil00 extends AppCompatActivity {
 
@@ -42,18 +41,6 @@ public class Accueil00 extends AppCompatActivity {
             realm.copyToRealm(new Ingredients_class("Chocolat","épicerie"));
             realm.copyToRealm(new Ingredients_class("Vin blanc","boissons"));
 
-
-//                        recettes de départ
-
-            Ingredients_class ingInRecette1 = realm.createObject(Ingredients_class.class);
-            ingInRecette1.name = "Oignon";
-            ingInRecette1.category = "légumes";
-
-
-            RealmList<IngredientsDeRecette> list_ing1 = new RealmList();
-            list_ing1.add(new IngredientsDeRecette(12, ingInRecette1));
-
-//            realm.copyToRealm(new Recette("Velouté de champignons", "Entrée", 4, "Etape 1 | Faire fondre dans une casserole 3 cuillères à soupe de beurre.\n Etape 2 | Ajouter un petit oignon haché et les champignons de Pariscoupés en tout petits morceaux.\n Etape 3 | Saler, poivrer, saupoudrer d’une cuillère à soupe de persilhaché.\n Etape 4 | Remuer bien les champignons dans le beurre chaud. Couvrir et laisser cuire à feu doux 1/4 heure.\n Etape 5 | Ajouter alors 2 cuillères à soupe de farine en remuant sans cesse. Ajouter 1/4 litre de bouillon (ou d’eau) et 1/2 litre de lait.\n Etape 6 | Faire cuire à feu doux en remuant de temps en temps.\n Etape 7 | Lorsque le potage commence à bouillir, baisser le feu et laisser cuire à découvert encore 1/4 d’heure.\n Etape 8 | Quelques minutes avant de servir ajouter le jus d’un citron puis 2 cuillères à soupe de crème fraîche.", list_ing1));
 
             realm.commitTransaction();
         }

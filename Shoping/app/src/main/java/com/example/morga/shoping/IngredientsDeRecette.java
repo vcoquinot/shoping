@@ -1,12 +1,10 @@
 package com.example.morga.shoping;
 
-import io.realm.RealmObject;
-
 /**
  * Created by morga on 21/02/2018.
  */
 
-public class IngredientsDeRecette extends RealmObject {
+public class IngredientsDeRecette {
     int quantity;
     Ingredients_class ingredient;
 
