@@ -28,7 +28,11 @@ public class liste_ingredients31 extends AbstractActivity {
 
         setContentView(R.layout.activity_31_liste_ingredients);
 
+
         laCategorie = getIntent().getStringExtra("cat_ingredients");
+
+        if (laCategorie == null) {laCategorie = Category.ENTREE;}
+
 
         Realm realm = Realm.getDefaultInstance();
 
@@ -87,34 +91,41 @@ public class liste_ingredients31 extends AbstractActivity {
 
             if (laCategorie.equals(Category.FRUITS)) {
                 ui_picto = findViewById(R.id.cat_fruit);
+                razPictos();
                 ui_picto.setAlpha(1.0f);
 
             }
             else if (laCategorie.equals(Category.LEGUMES)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_legume);
                 ui_picto.setAlpha(1.0f);
 
             }
              else if (laCategorie.equals(Category.BOUCHERIE)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_boucherie);
                 ui_picto.setAlpha(1.0f);
             }
             else if (laCategorie.equals(Category.POISSONNERIE)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_poissonnerie);
                 ui_picto.setAlpha(1.0f);
             }
             else if (laCategorie.equals(Category.FRAIS)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_frais);
                 ui_picto.setAlpha(1.0f);
             }
             else if (laCategorie.equals(Category.EPICERIE)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_epicerie);
+
                 ui_picto.setAlpha(1.0f);
             }
             else if (laCategorie.equals(Category.BOISSONS)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_boissons);
                 ui_picto.setAlpha(1.0f);
-                notifyDataSetChanged();
             }
 
 
@@ -168,7 +179,33 @@ public class liste_ingredients31 extends AbstractActivity {
                     Toast.makeText(view.getContext(),"Ingrédient supprimé",Toast.LENGTH_LONG).show();
                     supprimerIngredient(ingr,numIngredient);
                 }
+
             }
         }
+
+    private void razPictos() {
+        ui_picto = findViewById(R.id.cat_fruit);
+        ui_picto.setAlpha(0.6f);
+
+
+        ui_picto = findViewById(R.id.cat_legume);
+        ui_picto.setAlpha(0.6f);
+
+
+        ui_picto = findViewById(R.id.cat_boucherie);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_poissonnerie);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_frais);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_epicerie);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_boissons);
+        ui_picto.setAlpha(0.6f);
+    }
     }
 
