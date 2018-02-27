@@ -18,14 +18,14 @@ public class categorie_ingredient30 extends AbstractActivity {
 
     public void clickFruit(View fruitImageButton) {
         Intent intent = new Intent(categorie_ingredient30.this, liste_ingredients31.class);
-        intent.putExtra("cat_ingredients", "fruit");
+        intent.putExtra("cat_ingredients", Category.FRUITS);
         intent.putExtra(Intent.EXTRA_TEXT, ContentText);
         startActivity(intent);
     }
 
     public void clickLegume(View legumeImageButton) {
         Intent intent = new Intent(categorie_ingredient30.this, liste_ingredients31.class);
-        intent.putExtra("cat_ingredients", "légume");
+        intent.putExtra("cat_ingredients", Category.LEGUMES);
         intent.putExtra(Intent.EXTRA_TEXT, ContentText);
         startActivity(intent);
     }

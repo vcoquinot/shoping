@@ -26,26 +26,26 @@ public class Accueil00 extends AppCompatActivity {
             realm.beginTransaction();
 
             //            ingrédients de départ
-            realm.copyToRealm(new Ingredients_class("Carotte","légume"));
-            realm.copyToRealm(new Ingredients_class("Brocoli","légume"));
-            realm.copyToRealm(new Ingredients_class("Courgette","légume"));
-            realm.copyToRealm(new Ingredients_class("Champigon","légume"));
-            realm.copyToRealm(new Ingredients_class("Oignons","légume"));
-            realm.copyToRealm(new Ingredients_class("Tomate","fruit"));
-            realm.copyToRealm(new Ingredients_class("Banane","fruit"));
-            realm.copyToRealm(new Ingredients_class("Boeuf","boucherie"));
-            realm.copyToRealm(new Ingredients_class("Lapin","boucherie"));
-            realm.copyToRealm(new Ingredients_class("Lotte","poissonnerie"));
-            realm.copyToRealm(new Ingredients_class("Saumon","poissonnerie"));
-            realm.copyToRealm(new Ingredients_class("Fromage","frais"));
-            realm.copyToRealm(new Ingredients_class("Chocolat","épicerie"));
-            realm.copyToRealm(new Ingredients_class("Vin blanc","boissons"));
+            realm.copyToRealm(new Ingredients_class("Carotte",Category.LEGUMES));
+            realm.copyToRealm(new Ingredients_class("Brocoli",Category.LEGUMES));
+            realm.copyToRealm(new Ingredients_class("Courgette",Category.LEGUMES));
+            realm.copyToRealm(new Ingredients_class("Champigon",Category.LEGUMES));
+            realm.copyToRealm(new Ingredients_class("Oignons",Category.LEGUMES));
+            realm.copyToRealm(new Ingredients_class("Tomate",Category.FRUITS));
+            realm.copyToRealm(new Ingredients_class("Banane",Category.FRUITS));
+            realm.copyToRealm(new Ingredients_class("Boeuf",Category.BOUCHERIE));
+            realm.copyToRealm(new Ingredients_class("Lapin",Category.BOUCHERIE));
+            realm.copyToRealm(new Ingredients_class("Lotte",Category.POISSONNERIE));
+            realm.copyToRealm(new Ingredients_class("Saumon",Category.POISSONNERIE));
+            realm.copyToRealm(new Ingredients_class("Fromage",Category.FRAIS));
+            realm.copyToRealm(new Ingredients_class("Chocolat",Category.EPICERIE));
+            realm.copyToRealm(new Ingredients_class("Vin blanc",Category.BOISSONS));
 
             //            recettes de départ
 
             Recette r1 = new Recette("Velouté de champignons", Category.ENTREE, 4, "Etape 1 | Faire fondre dans une casserole 3 cuillères à soupe de beurre.\n Etape 2 | Ajouter un petit oignon haché et les champignons de Pariscoupés en tout petits morceaux.\n Etape 3 | Saler, poivrer, saupoudrer d’une cuillère à soupe de persilhaché.\n Etape 4 | Remuer bien les champignons dans le beurre chaud. Couvrir et laisser cuire à feu doux 1/4 heure.\n Etape 5 | Ajouter alors 2 cuillères à soupe de farine en remuant sans cesse. Ajouter 1/4 litre de bouillon (ou d’eau) et 1/2 litre de lait.\n Etape 6 | Faire cuire à feu doux en remuant de temps en temps.\n Etape 7 | Lorsque le potage commence à bouillir, baisser le feu et laisser cuire à découvert encore 1/4 d’heure.\n Etape 8 | Quelques minutes avant de servir ajouter le jus d’un citron puis 2 cuillères à soupe de crème fraîche.");
 
-            Ingredients_class ingInRecette1 = new Ingredients_class("Oignon", "légumes");
+            Ingredients_class ingInRecette1 = new Ingredients_class("Oignon", Category.LEGUMES);
             IngredientsDeRecette quantiteIngredient = new IngredientsDeRecette(12, ingInRecette1);
             r1.addIngredient(quantiteIngredient);
 
