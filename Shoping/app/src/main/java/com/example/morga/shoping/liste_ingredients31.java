@@ -1,13 +1,16 @@
 package com.example.morga.shoping;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -97,7 +100,8 @@ public class liste_ingredients31 extends AbstractActivity {
             if (laCategorie.equals("fruit")) {
                 ui_picto = findViewById(R.id.cat_fruit);
 //                ui_picto.setImageAlpha(255);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
+                //ui_picto.setBackgroundColor(Color.BLUE);
 //                ui_picto.drawableStateChanged ();
             }
             else if (laCategorie.equals("légume")) {
@@ -162,12 +166,14 @@ public class liste_ingredients31 extends AbstractActivity {
             }
             class IngredientsHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
                 private final TextView ui_nameLabel;
+                private final ImageView ui_delButton;
 
 
                 public IngredientsHolder(View vue) {
                     super(vue);
                     ui_nameLabel = vue.findViewById(R.id.name);
-                    vue.setOnClickListener(this);
+                    ui_delButton = vue.findViewById(R.id.del_button);
+                    ui_delButton.setOnClickListener(this);
                 }
 
                 public void remplirVue(String name) {
@@ -176,7 +182,6 @@ public class liste_ingredients31 extends AbstractActivity {
 
                 @Override
                 public void onClick(View view) {
-                    view=findViewById(R.id.del_button);
                     int numIngredient=getAdapterPosition();
                     Ingredients_class ingr=_listIngredient.get(numIngredient);
                     Toast.makeText(view.getContext(),"Ingrédient supprimé",Toast.LENGTH_LONG).show();
