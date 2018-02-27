@@ -72,19 +72,19 @@ public class Liste_recettes21 extends AbstractActivity {
 
             if (categorie.equals(Category.ENTREE)) {
                 ui_picto = findViewById(R.id.cat_entree);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.PLAT)) {
                 ui_picto = findViewById(R.id.cat_plat);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.DESSERT)) {
                 ui_picto = findViewById(R.id.cat_dessert);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.AUTRES)) {
                 ui_picto = findViewById(R.id.cat_autre);
-                ui_picto.setImageAlpha(128);
+                ui_picto.setAlpha(1.0f);
             }
         }
 
