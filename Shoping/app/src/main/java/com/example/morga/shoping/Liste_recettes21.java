@@ -41,25 +41,25 @@ public class Liste_recettes21 extends AbstractActivity {
     public void clickOnEntree(View cat_entree) {
         categorie = Category.ENTREE;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        System.out.println("------------------------ Entrée" + categorie);
+        //System.out.println("------------------------ Entrée" + categorie);
     }
 
     public void clickOnPlat(View cat_plat) {
-        categorie = "plat";
+        categorie = Category.PLAT;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        System.out.println("------------------------ Plat" + categorie);
+        //System.out.println("------------------------ Plat" + categorie);
     }
 
     public void clickOnDessert(View cat_dessert) {
-        categorie = "dessert";
+        categorie = Category.DESSERT;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        System.out.println("------------------------ Dessert" + categorie);
+        //System.out.println("------------------------ Dessert" + categorie);
     }
 
     public void clickOnAutre(View cat_autre) {
-        categorie = "autre";
+        categorie = Category.AUTRES;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        System.out.println("------------------------ Autre" + categorie);
+        //System.out.println("------------------------ Autre" + categorie);
     }
 
     class AdapterRecettes extends RecyclerView.Adapter<Liste_recettes21.AdapterRecettes.MyViewHolder> {
@@ -72,19 +72,19 @@ public class Liste_recettes21 extends AbstractActivity {
 
             if (categorie.equals(Category.ENTREE)) {
                 ui_picto = findViewById(R.id.cat_entree);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
             }
-            else if (categorie.equals("plat")) {
+            else if (categorie.equals(Category.PLAT)) {
                 ui_picto = findViewById(R.id.cat_plat);
-                ui_picto.setBackgroundColor(128);
+                ui_picto.setAlpha(1.0f);
             }
-            else if (categorie.equals("dessert")) {
+            else if (categorie.equals(Category.DESSERT)) {
                 ui_picto = findViewById(R.id.cat_dessert);
-                ui_picto.setBackgroundColor(25);
+                ui_picto.setAlpha(1.0f);
             }
-            else if (categorie.equals("autre")) {
+            else if (categorie.equals(Category.AUTRES)) {
                 ui_picto = findViewById(R.id.cat_autre);
-                ui_picto.setImageAlpha(255);
+                ui_picto.setAlpha(1.0f);
             }
         }
 

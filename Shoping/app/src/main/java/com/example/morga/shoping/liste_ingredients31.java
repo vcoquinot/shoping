@@ -20,14 +20,11 @@ public class liste_ingredients31 extends AbstractActivity {
     private ImageButton ui_picto;
     public String ContentText;
     public String laCategorie;
-    public RealmResults<Ingredients_class> _listIngredient;;
-
-
+    public RealmResults<Ingredients_class> _listIngredient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
 
         setContentView(R.layout.activity_31_liste_ingredients);
 
@@ -40,99 +37,88 @@ public class liste_ingredients31 extends AbstractActivity {
         ui_recyclerIngredients = findViewById(R.id.recycler__ingredient);
         ui_recyclerIngredients.setLayoutManager(new LinearLayoutManager(this));
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
-
     }
 
     public void clickCatFruit(View cat_fruit) {
-        laCategorie = "fruit";
+        laCategorie = Category.FRUITS;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatLegume(View cat_legume) {
-        laCategorie = "légume";
+        laCategorie = Category.LEGUMES;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatBoucherie(View cat_boucherie) {
-        laCategorie = "boucherie";
+        laCategorie = Category.BOUCHERIE;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatPoissonnerie(View cat_poissonnerie) {
-        laCategorie = "poissonnerie";
+        laCategorie = Category.POISSONNERIE;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatFrais(View cat_frais) {
-        laCategorie = "frais";
+        laCategorie = Category.FRAIS;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatEpicerie(View cat_epicerie) {
-        laCategorie = "épicerie";
+        laCategorie = Category.EPICERIE;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     public void clickCatBoissons(View cat_boissons) {
-        laCategorie = "boissons";
+        laCategorie = Category.BOISSONS;
         ui_recyclerIngredients.setAdapter(new AdapterIngredients());
     }
 
     class AdapterIngredients extends RecyclerView.Adapter<AdapterIngredients.IngredientsHolder> {
-//        RealmResults<Ingredients_class> _listIngredient;
+
 
         public AdapterIngredients() {
 
             Realm realm = Realm.getDefaultInstance();
 
-//            String laCategorie = getIntent().getStringExtra("cat_ingredients");
+
             _listIngredient = realm.where(Ingredients_class.class).equalTo("category", laCategorie).findAll();
-//            System.out.println("---------------------Size------ " + _listIngredient.size());
-//            System.out.println("---------------------AdapterIngredients");
-//            System.out.println("---------------------laCategorie------ " + laCategorie);
 
 
-
-            if (laCategorie.equals("fruit")) {
+            if (laCategorie.equals(Category.FRUITS)) {
                 ui_picto = findViewById(R.id.cat_fruit);
-//                ui_picto.setImageAlpha(255);
                 ui_picto.setAlpha(1.0f);
-                //ui_picto.setBackgroundColor(Color.BLUE);
-//                ui_picto.drawableStateChanged ();
-            }
-            else if (laCategorie.equals("légume")) {
-                ui_picto = findViewById(R.id.cat_legume);
-                ui_picto.setRotation(-5);
-//                ui_picto.setImageAlpha(255);
-            }
-             else if (laCategorie.equals("boucherie")) {
-                ui_picto = findViewById(R.id.cat_boucherie);
-                ui_picto.setBackgroundColor(25);
-            }
-            else if (laCategorie.equals("poissonnerie")) {
-                ui_picto = findViewById(R.id.cat_poissonnerie);
-                ui_picto.setImageAlpha(255);
 
             }
-            else if (laCategorie.equals("frais")) {
+            else if (laCategorie.equals(Category.LEGUMES)) {
+                ui_picto = findViewById(R.id.cat_legume);
+                ui_picto.setAlpha(1.0f);
+
+            }
+             else if (laCategorie.equals(Category.BOUCHERIE)) {
+                ui_picto = findViewById(R.id.cat_boucherie);
+                ui_picto.setAlpha(1.0f);
+            }
+            else if (laCategorie.equals(Category.POISSONNERIE)) {
+                ui_picto = findViewById(R.id.cat_poissonnerie);
+                ui_picto.setAlpha(1.0f);
+            }
+            else if (laCategorie.equals(Category.FRAIS)) {
                 ui_picto = findViewById(R.id.cat_frais);
-                ui_picto.setImageAlpha(255);
+                ui_picto.setAlpha(1.0f);
             }
-            else if (laCategorie.equals("épicerie")) {
+            else if (laCategorie.equals(Category.EPICERIE)) {
                 ui_picto = findViewById(R.id.cat_epicerie);
-                ui_picto.setImageAlpha(255);
+                ui_picto.setAlpha(1.0f);
             }
-            else if (laCategorie.equals("boissons")) {
+            else if (laCategorie.equals(Category.BOISSONS)) {
                 ui_picto = findViewById(R.id.cat_boissons);
-                ui_picto.setImageAlpha(255);
+                ui_picto.setAlpha(1.0f);
                 notifyDataSetChanged();
             }
-//            notifyDataSetChanged();
 
 
-            }
-
-
+        }
 
         void supprimerIngredient(Ingredients_class ingredientASupprimer, int position){
             Realm realm=Realm.getDefaultInstance();
@@ -140,7 +126,6 @@ public class liste_ingredients31 extends AbstractActivity {
             ingredientASupprimer.deleteFromRealm();
             realm.commitTransaction();
             notifyItemRemoved(position);
-
         }
             @Override
             public IngredientsHolder onCreateViewHolder (ViewGroup parent,int viewType){
@@ -153,13 +138,13 @@ public class liste_ingredients31 extends AbstractActivity {
             public void onBindViewHolder (IngredientsHolder holder,int position){
                 Ingredients_class ingredient = _listIngredient.get(position);
                 holder.remplirVue(ingredient.getName());
-
             }
 
             @Override
             public int getItemCount () {
                 return _listIngredient.size();
             }
+
             class IngredientsHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
                 private final TextView ui_nameLabel;
                 private final ImageView ui_delButton;
@@ -184,8 +169,6 @@ public class liste_ingredients31 extends AbstractActivity {
                     supprimerIngredient(ingr,numIngredient);
                 }
             }
-
         }
-
     }
 
