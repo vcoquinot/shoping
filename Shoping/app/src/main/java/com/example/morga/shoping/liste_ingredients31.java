@@ -75,29 +75,25 @@ public class liste_ingredients31 extends AbstractActivity {
     }
 
     class AdapterIngredients extends RecyclerView.Adapter<AdapterIngredients.IngredientsHolder> {
-//        RealmResults<Ingredients_class> _listIngredient;
+
 
         public AdapterIngredients() {
 
             Realm realm = Realm.getDefaultInstance();
 
-//            String laCategorie = getIntent().getStringExtra("cat_ingredients");
+
             _listIngredient = realm.where(Ingredients_class.class).equalTo("category", laCategorie).findAll();
-//            System.out.println("---------------------Size------ " + _listIngredient.size());
-//            System.out.println("---------------------AdapterIngredients");
-//            System.out.println("---------------------laCategorie------ " + laCategorie);
+
 
             if (laCategorie.equals(Category.FRUITS)) {
                 ui_picto = findViewById(R.id.cat_fruit);
-//                ui_picto.setImageAlpha(255);
                 ui_picto.setAlpha(1.0f);
-                //ui_picto.setBackgroundColor(Color.BLUE);
-//                ui_picto.drawableStateChanged ();
+
             }
             else if (laCategorie.equals(Category.LEGUMES)) {
                 ui_picto = findViewById(R.id.cat_legume);
                 ui_picto.setAlpha(1.0f);
-//                ui_picto.setImageAlpha(255);
+
             }
              else if (laCategorie.equals(Category.BOUCHERIE)) {
                 ui_picto = findViewById(R.id.cat_boucherie);
@@ -120,7 +116,7 @@ public class liste_ingredients31 extends AbstractActivity {
                 ui_picto.setAlpha(1.0f);
                 notifyDataSetChanged();
             }
-//            notifyDataSetChanged();
+
 
         }
 

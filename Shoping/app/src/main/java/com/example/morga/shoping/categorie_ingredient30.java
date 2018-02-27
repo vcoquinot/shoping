@@ -3,10 +3,13 @@ package com.example.morga.shoping;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 public class categorie_ingredient30 extends AbstractActivity {
 
     public String ContentText;
+    private ImageButton ui_picto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
