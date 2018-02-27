@@ -182,6 +182,7 @@ public class liste_ingredients31 extends AbstractActivity {
 
             }
         }
+
     private void razPictos() {
         ui_picto = findViewById(R.id.cat_fruit);
         ui_picto.setAlpha(0.6f);

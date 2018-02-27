@@ -41,25 +41,21 @@ public class Liste_recettes21 extends AbstractActivity {
     public void clickOnEntree(View cat_entree) {
         categorie = Category.ENTREE;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        //System.out.println("------------------------ Entrée" + categorie);
     }
 
     public void clickOnPlat(View cat_plat) {
         categorie = Category.PLAT;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        //System.out.println("------------------------ Plat" + categorie);
     }
 
     public void clickOnDessert(View cat_dessert) {
         categorie = Category.DESSERT;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        //System.out.println("------------------------ Dessert" + categorie);
     }
 
     public void clickOnAutre(View cat_autre) {
         categorie = Category.AUTRES;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
-        //System.out.println("------------------------ Autre" + categorie);
     }
 
     class AdapterRecettes extends RecyclerView.Adapter<Liste_recettes21.AdapterRecettes.MyViewHolder> {
@@ -71,18 +67,22 @@ public class Liste_recettes21 extends AbstractActivity {
             _listRecettes = realm.where(Recette.class).equalTo("category", categorie).findAll();
 
             if (categorie.equals(Category.ENTREE)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_entree);
                 ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.PLAT)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_plat);
                 ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.DESSERT)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_dessert);
                 ui_picto.setAlpha(1.0f);
             }
             else if (categorie.equals(Category.AUTRES)) {
+                razPictos();
                 ui_picto = findViewById(R.id.cat_autre);
                 ui_picto.setAlpha(1.0f);
             }
@@ -121,5 +121,19 @@ public class Liste_recettes21 extends AbstractActivity {
             }
 
         }
+    }
+    private void razPictos() {
+        ui_picto = findViewById(R.id.cat_entree);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_plat);
+        ui_picto.setAlpha(0.6f);
+
+
+        ui_picto = findViewById(R.id.cat_dessert);
+        ui_picto.setAlpha(0.6f);
+
+        ui_picto = findViewById(R.id.cat_poissonnerie);
+        ui_picto = findViewById(R.id.cat_autre);
     }
 }
