@@ -44,4 +44,5 @@ public class categorie_recette20 extends AbstractActivity {
         activity_autre.putExtra(Intent.EXTRA_TEXT, ContentText);
         startActivity(activity_autre);
     }
+
 }
