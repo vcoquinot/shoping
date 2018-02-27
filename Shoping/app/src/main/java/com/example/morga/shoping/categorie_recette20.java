@@ -19,7 +19,7 @@ public class categorie_recette20 extends AbstractActivity {
 
     public void clickEntree(View entreeImageButton) {
         Intent activity_entree = new Intent(categorie_recette20.this, Liste_recettes21.class);
-        activity_entree.putExtra("cat_recettes", "entrée");
+        activity_entree.putExtra("cat_recettes", Category.ENTREE);
         activity_entree.putExtra(Intent.EXTRA_TEXT, ContentText);
         startActivity(activity_entree);
     }

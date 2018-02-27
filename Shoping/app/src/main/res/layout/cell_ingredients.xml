@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/bt_40" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/titre_recette"
         android:layout_width="305dp"
         android:layout_height="20dp"
         android:layout_marginBottom="8dp"

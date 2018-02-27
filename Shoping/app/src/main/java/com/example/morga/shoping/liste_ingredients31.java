@@ -1,14 +1,11 @@
 package com.example.morga.shoping;
 
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +13,6 @@ import android.widget.Toast;
 
 import io.realm.Realm;
 import io.realm.RealmResults;
-import io.realm.RealmObject;
 
 
 public class liste_ingredients31 extends AbstractActivity {
@@ -171,7 +167,7 @@ public class liste_ingredients31 extends AbstractActivity {
 
                 public IngredientsHolder(View vue) {
                     super(vue);
-                    ui_nameLabel = vue.findViewById(R.id.name);
+                    ui_nameLabel = vue.findViewById(R.id.titre_recette);
                     ui_delButton = vue.findViewById(R.id.del_button);
                     ui_delButton.setOnClickListener(this);
                 }

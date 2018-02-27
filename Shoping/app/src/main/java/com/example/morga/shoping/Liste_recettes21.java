@@ -16,7 +16,7 @@ import io.realm.RealmResults;
 public class Liste_recettes21 extends AbstractActivity {
     private RecyclerView ui_listeRecettesRecycler;
     public String categorie;
-    public RealmResults<Recettes_class> _listRecettes;
+    public RealmResults<Recette> _listRecettes;
     private ImageButton ui_picto;
 
     @Override
@@ -26,9 +26,7 @@ public class Liste_recettes21 extends AbstractActivity {
 
         categorie = getIntent().getStringExtra("cat_recettes");
 
-        Realm realm = Realm.getDefaultInstance();
 
-        _listRecettes = realm.where(Recettes_class.class).equalTo("category", categorie).findAll();
 
         ui_listeRecettesRecycler = findViewById(R.id.recycler__recettes);
         ui_listeRecettesRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -41,7 +39,7 @@ public class Liste_recettes21 extends AbstractActivity {
 //    }
 
     public void clickOnEntree(View cat_entree) {
-        categorie = "entrée";
+        categorie = Category.ENTREE;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
         System.out.println("------------------------ Entrée" + categorie);
     }
@@ -68,10 +66,11 @@ public class Liste_recettes21 extends AbstractActivity {
 
         public AdapterRecettes() {
 
-            Realm realm = Realm.getDefaultInstance();
-            _listRecettes = realm.where(Recettes_class.class).equalTo("category", categorie).findAll();
 
-            if (categorie.equals("entree")) {
+            Realm realm = Realm.getDefaultInstance();
+            _listRecettes = realm.where(Recette.class).equalTo("category", categorie).findAll();
+
+            if (categorie.equals(Category.ENTREE)) {
                 ui_picto = findViewById(R.id.cat_entree);
                 ui_picto.setBackgroundColor(128);
             }
@@ -98,11 +97,13 @@ public class Liste_recettes21 extends AbstractActivity {
 
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position) {
+            Recette r = _listRecettes.get(position);
+            holder.remplirVue(r.getName());
         }
 
         @Override
         public int getItemCount() {
-            return 200;
+            return _listRecettes.size();
         }
 
         class MyViewHolder extends RecyclerView.ViewHolder {
@@ -111,7 +112,7 @@ public class Liste_recettes21 extends AbstractActivity {
             public MyViewHolder(View vue) {
 
                 super(vue);
-                ui_titleLabel = vue.findViewById(R.id.titre_cat_recettes);
+                ui_titleLabel = vue.findViewById(R.id.titre_recette);
 
             }
 

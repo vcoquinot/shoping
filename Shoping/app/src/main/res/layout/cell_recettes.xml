@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/titre_recette"
         android:layout_width="313dp"
         android:layout_height="29dp"
         android:layout_marginStart="8dp"
@@ -41,7 +41,7 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="@+id/titre_recette"
         app:srcCompat="@drawable/picto_croix_annule"
         tools:layout_editor_absoluteY="16dp" />
 

@@ -1,7 +1,5 @@
 package com.example.morga.shoping;
 
-import java.util.ArrayList;
-
 import io.realm.RealmList;
 import io.realm.RealmObject;
 
@@ -9,12 +7,12 @@ import io.realm.RealmObject;
  * Created by morga on 21/02/2018.
  */
 
-public class Recette {
+public class Recette extends RealmObject {
     String name;
     String category;
     int nbPeople;
     String preparation;
-    ArrayList<IngredientsDeRecette> IngredientsInRecette;
+    RealmList<IngredientsDeRecette> listIngredients;
 
     public Recette() {
     }
@@ -51,19 +49,23 @@ public class Recette {
         this.preparation = preparation;
     }
 
-    public ArrayList<IngredientsDeRecette> getIngredientsInRecette() {
-        return IngredientsInRecette;
+    public RealmList<IngredientsDeRecette> getListIngredients() {
+        return listIngredients;
     }
 
-    public void setIngredientsInRecette(ArrayList<IngredientsDeRecette> ingredientsInRecette) {
-        IngredientsInRecette = ingredientsInRecette;
+    public void setListIngredients(RealmList<IngredientsDeRecette> listIngredients) {
+        this.listIngredients = listIngredients;
     }
 
-    public Recette(String name, String category, int nbPeople, String preparation, ArrayList<IngredientsDeRecette> ingredientsInRecette) {
+    public Recette(String name, String category, int nbPeople, String preparation) {
         this.name = name;
         this.category = category;
         this.nbPeople = nbPeople;
         this.preparation = preparation;
-        IngredientsInRecette = ingredientsInRecette;
+        this.listIngredients = new RealmList<>();
+    }
+
+    public void addIngredient(IngredientsDeRecette ingredientsDeRecette) {
+        listIngredients.add(ingredientsDeRecette);
     }
 }
