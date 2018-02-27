@@ -6,4 +6,7 @@ package com.example.morga.shoping;
 
 public class Category {
     public static final String ENTREE = "Entrée";
+    public static final String PLAT= "Plat";
+    public static final String DESSERT= "Dessert";
+    public static final String AUTRES= "Autres";
 }
