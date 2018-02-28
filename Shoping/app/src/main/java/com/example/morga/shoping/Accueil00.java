@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Window;
 
 import io.realm.Realm;
+import io.realm.RealmList;
 import io.realm.RealmResults;
 
 public class Accueil00 extends AppCompatActivity {
@@ -88,6 +89,7 @@ public class Accueil00 extends AppCompatActivity {
             IngredientsDeRecette quantiteIngredientr8 = new IngredientsDeRecette(4, ingInRecette8);
             r8.addIngredient(quantiteIngredient);
 
+
             realm.copyToRealm(r1);
             realm.copyToRealm(r2);
             realm.copyToRealm(r3);
@@ -96,6 +98,15 @@ public class Accueil00 extends AppCompatActivity {
             realm.copyToRealm(r6);
             realm.copyToRealm(r7);
             realm.copyToRealm(r8);
+
+            // Sélection Recette de base
+            RealmList<Recette> ma_selection_recette = new RealmList<>();
+            ma_selection_recette.add(r1);
+            ma_selection_recette.add(r3);
+            ma_selection_recette.add(r8);
+            realm.copyToRealm(ma_selection_recette);
+
+
 
             realm.commitTransaction();
         }
