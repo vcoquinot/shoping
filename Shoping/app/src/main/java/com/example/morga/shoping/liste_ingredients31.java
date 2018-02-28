@@ -33,7 +33,7 @@ public class liste_ingredients31 extends AbstractActivity {
         laCategorie = getIntent().getStringExtra("cat_ingredients");
 
         if (laCategorie == null) {
-            laCategorie = Category.ENTREE;
+            laCategorie = "All";
         }
 
 
@@ -88,13 +88,17 @@ public class liste_ingredients31 extends AbstractActivity {
 
             Realm realm = Realm.getDefaultInstance();
 
-
+            if (laCategorie == "All") {
+                _listIngredient = realm.where(Ingredients_class.class).findAll();
+            }
+            else {
             _listIngredient = realm.where(Ingredients_class.class).equalTo("category", laCategorie).findAll();
+            }
 
 
             if (laCategorie.equals(Category.FRUITS)) {
-                ui_picto = findViewById(R.id.cat_fruit);
                 razPictos();
+                ui_picto = findViewById(R.id.cat_fruit);
                 ui_picto.setAlpha(1.0f);
 
             } else if (laCategorie.equals(Category.LEGUMES)) {
@@ -117,10 +121,32 @@ public class liste_ingredients31 extends AbstractActivity {
             } else if (laCategorie.equals(Category.EPICERIE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_epicerie);
-
                 ui_picto.setAlpha(1.0f);
             } else if (laCategorie.equals(Category.BOISSONS)) {
                 razPictos();
+                ui_picto = findViewById(R.id.cat_boissons);
+                ui_picto.setAlpha(1.0f);
+            }
+            else {
+                ui_picto = findViewById(R.id.cat_fruit);
+                ui_picto.setAlpha(1.0f);
+
+                ui_picto = findViewById(R.id.cat_legume);
+                ui_picto.setAlpha(1.0f);
+
+
+                ui_picto = findViewById(R.id.cat_boucherie);
+                ui_picto.setAlpha(1.0f);
+
+                ui_picto = findViewById(R.id.cat_poissonnerie);
+                ui_picto.setAlpha(1.0f);
+
+                ui_picto = findViewById(R.id.cat_frais);
+                ui_picto.setAlpha(1.0f);
+
+                ui_picto = findViewById(R.id.cat_epicerie);
+                ui_picto.setAlpha(1.0f);
+
                 ui_picto = findViewById(R.id.cat_boissons);
                 ui_picto.setAlpha(1.0f);
             }
@@ -184,7 +210,6 @@ public class liste_ingredients31 extends AbstractActivity {
     private void razPictos() {
         ui_picto = findViewById(R.id.cat_fruit);
         ui_picto.setAlpha(0.6f);
-
 
         ui_picto = findViewById(R.id.cat_legume);
         ui_picto.setAlpha(0.6f);

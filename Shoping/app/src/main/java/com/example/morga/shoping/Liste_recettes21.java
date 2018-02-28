@@ -1,6 +1,5 @@
 package com.example.morga.shoping;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -54,7 +53,7 @@ public class Liste_recettes21 extends AbstractActivity {
     }
 
     public void clickOnAutre(View cat_autre) {
-        categorie = Category.AUTRES;
+        categorie = Category.AUTRE;
         ui_listeRecettesRecycler.setAdapter(new AdapterRecettes());
     }
 
@@ -81,7 +80,7 @@ public class Liste_recettes21 extends AbstractActivity {
                 ui_picto = findViewById(R.id.cat_dessert);
                 ui_picto.setAlpha(1.0f);
             }
-            else if (categorie.equals(Category.AUTRES)) {
+            else if (categorie.equals(Category.AUTRE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_autre);
                 ui_picto.setAlpha(1.0f);
@@ -129,11 +128,10 @@ public class Liste_recettes21 extends AbstractActivity {
         ui_picto = findViewById(R.id.cat_plat);
         ui_picto.setAlpha(0.6f);
 
-
         ui_picto = findViewById(R.id.cat_dessert);
         ui_picto.setAlpha(0.6f);
 
-        ui_picto = findViewById(R.id.cat_poissonnerie);
         ui_picto = findViewById(R.id.cat_autre);
+        ui_picto.setAlpha(0.6f);
     }
 }

@@ -34,4 +34,8 @@ public class Ma_selection extends RealmObject {
     public void add_recette_to_selection(Recette recette) {
         ma_selection_recette.add(recette);
     }
+
+    public void raz_recette_to_selection() {
+        ma_selection_recette.deleteAllFromRealm();
+    }
 }
