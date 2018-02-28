@@ -8,7 +8,7 @@ public class Category {
     public static final String ENTREE = "Entrée";
     public static final String PLAT= "Plat";
     public static final String DESSERT= "Dessert";
-    public static final String AUTRES= "Autres";
+    public static final String AUTRE = "Autre";
     public static final String FRUITS= "FRUITS";
     public static final String LEGUMES= "LÉGUMES";
     public static final String BOUCHERIE= "BOUCHERIE";

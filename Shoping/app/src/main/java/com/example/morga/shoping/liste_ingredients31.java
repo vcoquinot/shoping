@@ -93,8 +93,8 @@ public class liste_ingredients31 extends AbstractActivity {
 
 
             if (laCategorie.equals(Category.FRUITS)) {
-                ui_picto = findViewById(R.id.cat_fruit);
                 razPictos();
+                ui_picto = findViewById(R.id.cat_fruit);
                 ui_picto.setAlpha(1.0f);
 
             } else if (laCategorie.equals(Category.LEGUMES)) {
@@ -117,7 +117,6 @@ public class liste_ingredients31 extends AbstractActivity {
             } else if (laCategorie.equals(Category.EPICERIE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_epicerie);
-
                 ui_picto.setAlpha(1.0f);
             } else if (laCategorie.equals(Category.BOISSONS)) {
                 razPictos();
