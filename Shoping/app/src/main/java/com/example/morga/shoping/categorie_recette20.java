@@ -3,7 +3,6 @@ package com.example.morga.shoping;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class categorie_recette20 extends AbstractActivity {
 
@@ -21,7 +20,7 @@ public class categorie_recette20 extends AbstractActivity {
         Intent activity_entree = new Intent(categorie_recette20.this, Liste_recettes21.class);
         activity_entree.putExtra("cat_recettes", Category.ENTREE);
         activity_entree.putExtra(Intent.EXTRA_TEXT, ContentText);
-        startActivity(activity_entree);//TODO ???????????????????????????????????????????????????????????????????????
+        startActivity(activity_entree);//
     }
 
     public void clickPlat(View platImageButton) {
@@ -40,7 +39,7 @@ public class categorie_recette20 extends AbstractActivity {
 
     public void clickAutre(View autreImageButton) {
         Intent activity_autre = new Intent(categorie_recette20.this, Liste_recettes21.class);
-        activity_autre.putExtra("cat_recettes", Category.AUTRES);
+        activity_autre.putExtra("cat_recettes", Category.AUTRE);
         activity_autre.putExtra(Intent.EXTRA_TEXT, ContentText);
         startActivity(activity_autre);
     }

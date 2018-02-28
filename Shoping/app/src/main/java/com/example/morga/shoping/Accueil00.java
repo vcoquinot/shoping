@@ -74,12 +74,12 @@ public class Accueil00 extends AppCompatActivity {
             IngredientsDeRecette quantiteIngredientr5 = new IngredientsDeRecette(1, ingInRecette5);
             r5.addIngredient(quantiteIngredient);
 
-            Recette r6 = new Recette("Tapas", Category.AUTRES, 4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+            Recette r6 = new Recette("Tapas", Category.AUTRE, 4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
             Ingredients_class ingInRecette6 = new Ingredients_class("Huile d'olive", Category.EPICERIE);
             IngredientsDeRecette quantiteIngredientr6 = new IngredientsDeRecette(1, ingInRecette6);
             r6.addIngredient(quantiteIngredient);
 
-            Recette r7 = new Recette("Boisson de Noël", Category.AUTRES, 4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+            Recette r7 = new Recette("Boisson de Noël", Category.AUTRE, 4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
             Ingredients_class ingInRecette7 = new Ingredients_class("Sucre", Category.EPICERIE);
             IngredientsDeRecette quantiteIngredientr7 = new IngredientsDeRecette(1, ingInRecette7);
             r7.addIngredient(quantiteIngredient);
