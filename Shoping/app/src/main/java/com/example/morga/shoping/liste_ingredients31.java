@@ -1,5 +1,6 @@
 package com.example.morga.shoping;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -31,7 +32,9 @@ public class liste_ingredients31 extends AbstractActivity {
 
         laCategorie = getIntent().getStringExtra("cat_ingredients");
 
-        if (laCategorie == null) {laCategorie = Category.ENTREE;}
+        if (laCategorie == null) {
+            laCategorie = Category.ENTREE;
+        }
 
 
         Realm realm = Realm.getDefaultInstance();
@@ -94,35 +97,29 @@ public class liste_ingredients31 extends AbstractActivity {
                 razPictos();
                 ui_picto.setAlpha(1.0f);
 
-            }
-            else if (laCategorie.equals(Category.LEGUMES)) {
+            } else if (laCategorie.equals(Category.LEGUMES)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_legume);
                 ui_picto.setAlpha(1.0f);
 
-            }
-             else if (laCategorie.equals(Category.BOUCHERIE)) {
+            } else if (laCategorie.equals(Category.BOUCHERIE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_boucherie);
                 ui_picto.setAlpha(1.0f);
-            }
-            else if (laCategorie.equals(Category.POISSONNERIE)) {
+            } else if (laCategorie.equals(Category.POISSONNERIE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_poissonnerie);
                 ui_picto.setAlpha(1.0f);
-            }
-            else if (laCategorie.equals(Category.FRAIS)) {
+            } else if (laCategorie.equals(Category.FRAIS)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_frais);
                 ui_picto.setAlpha(1.0f);
-            }
-            else if (laCategorie.equals(Category.EPICERIE)) {
+            } else if (laCategorie.equals(Category.EPICERIE)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_epicerie);
 
                 ui_picto.setAlpha(1.0f);
-            }
-            else if (laCategorie.equals(Category.BOISSONS)) {
+            } else if (laCategorie.equals(Category.BOISSONS)) {
                 razPictos();
                 ui_picto = findViewById(R.id.cat_boissons);
                 ui_picto.setAlpha(1.0f);
@@ -131,57 +128,58 @@ public class liste_ingredients31 extends AbstractActivity {
 
         }
 
-        void supprimerIngredient(Ingredients_class ingredientASupprimer, int position){
-            Realm realm=Realm.getDefaultInstance();
+        void supprimerIngredient(Ingredients_class ingredientASupprimer, int position) {
+            Realm realm = Realm.getDefaultInstance();
             realm.beginTransaction();
             ingredientASupprimer.deleteFromRealm();
             realm.commitTransaction();
             notifyItemRemoved(position);
         }
-            @Override
-            public IngredientsHolder onCreateViewHolder (ViewGroup parent,int viewType){
-                View vue = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_ingredients, parent, false);
-                IngredientsHolder holder = new IngredientsHolder(vue);
-                return holder;
-            }
 
-            @Override
-            public void onBindViewHolder (IngredientsHolder holder,int position){
-                Ingredients_class ingredient = _listIngredient.get(position);
-                holder.remplirVue(ingredient.getName());
-            }
-
-            @Override
-            public int getItemCount () {
-                return _listIngredient.size();
-            }
-
-            class IngredientsHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-                private final TextView ui_nameLabel;
-                private final ImageView ui_delButton;
-
-
-                public IngredientsHolder(View vue) {
-                    super(vue);
-                    ui_nameLabel = vue.findViewById(R.id.titre_recette);
-                    ui_delButton = vue.findViewById(R.id.del_button);
-                    ui_delButton.setOnClickListener(this);
-                }
-
-                public void remplirVue(String name) {
-                    ui_nameLabel.setText(name);
-                }
-
-                @Override
-                public void onClick(View view) {
-                    int numIngredient=getAdapterPosition();
-                    Ingredients_class ingr=_listIngredient.get(numIngredient);
-                    Toast.makeText(view.getContext(),"Ingrédient supprimé",Toast.LENGTH_LONG).show();
-                    supprimerIngredient(ingr,numIngredient);
-                }
-
-            }
+        @Override
+        public IngredientsHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            View vue = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_ingredients, parent, false);
+            IngredientsHolder holder = new IngredientsHolder(vue);
+            return holder;
         }
+
+        @Override
+        public void onBindViewHolder(IngredientsHolder holder, int position) {
+            Ingredients_class ingredient = _listIngredient.get(position);
+            holder.remplirVue(ingredient.getName());
+        }
+
+        @Override
+        public int getItemCount() {
+            return _listIngredient.size();
+        }
+
+        class IngredientsHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+            private final TextView ui_nameLabel;
+            private final ImageView ui_delButton;
+
+
+            public IngredientsHolder(View vue) {
+                super(vue);
+                ui_nameLabel = vue.findViewById(R.id.titre_recette);
+                ui_delButton = vue.findViewById(R.id.del_button);
+                ui_delButton.setOnClickListener(this);
+            }
+
+            public void remplirVue(String name) {
+                ui_nameLabel.setText(name);
+            }
+
+            @Override
+            public void onClick(View view) {
+                int numIngredient = getAdapterPosition();
+                Ingredients_class ingr = _listIngredient.get(numIngredient);
+                Toast.makeText(view.getContext(), "Ingrédient supprimé", Toast.LENGTH_LONG).show();
+                supprimerIngredient(ingr, numIngredient);
+            }
+
+        }
+    }
 
     private void razPictos() {
         ui_picto = findViewById(R.id.cat_fruit);
@@ -207,5 +205,10 @@ public class liste_ingredients31 extends AbstractActivity {
         ui_picto = findViewById(R.id.cat_boissons);
         ui_picto.setAlpha(0.6f);
     }
+
+    public void clickAjout(View AjoutImageButton) {
+        Intent intent = new Intent(liste_ingredients31.this, Ingredients32.class);
+        startActivity(intent);
     }
+}
 
