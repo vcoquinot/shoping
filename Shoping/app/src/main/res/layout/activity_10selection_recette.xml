@@ -43,5 +43,12 @@
         app:layout_constraintVertical_bias="0.46"
         tools:text="MA SÉLECTION DE RECETTES" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_selection_recettes"
+        android:layout_width="395dp"
+        android:layout_height="482dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="113dp" />
 
-    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
